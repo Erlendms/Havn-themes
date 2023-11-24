@@ -72,7 +72,7 @@
   ],
   "styles": {
     "body": {
-      "font": "SFPro-Regular",
+      "font": "SFProText-Regular",
       "_font": "PPNeueMontreal-Regular",
       "size": 16,
       "color": "#3e4a77",
@@ -87,7 +87,7 @@
     },
 
     "bold": {
-      "font": "SFPro-Semibold",
+      "font": "SFProText-Semibold",
       "_font": "PPNeueMontreal-Bold"
     },
     "bold-left-mark": {
@@ -100,7 +100,7 @@
     },
 
     "italic": {
-      "font": "SFPro-RegularItalic",
+      "font": "SFProText-RegularItalic",
       "_font": "PPNeueMontreal-Italic"
     },
     "italic-left-mark": {
@@ -113,7 +113,7 @@
     },
 
     "boldItalic": {
-      "font": "SFPro-SemiboldItalic",
+      "font": "SFProText-SemiboldItalic",
       "_font": "PPNeueMontreal-BoldItalic"
     },
     "boldItalic-left-mark": {
@@ -275,7 +275,7 @@
     },
 
     "title1": {
-      "font": "NewYork-Semibold",
+      "font": "NewYorkLarge-Semibold",
       "_font": "SFPro-Bold",
       "___font": "PPNeueMontreal-Bold",
       "__font": "PPWriter-Semibold",
@@ -285,7 +285,7 @@
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
       "matchPosition": 1,
-      "font": "NewYork-Medium",
+      "font": "NewYorkSmall-Medium",
       "_font": "SFPro-Medium",
       "___font": "PPNeueMontreal-Medium",
       "__font": "PPWriter-Medium",
@@ -295,7 +295,7 @@
     "title-mark1": {
       "color": "#50212840",
       "size": 20,
-      "font": "NewYork-Regular",
+      "font": "NewYorkMedium-Regular",
       "_font": "SFPro-Light",
       "___font": "PPNeueMontreal-Book",
       "__font": "PPWriter-ThinText",
@@ -304,7 +304,7 @@
     },
 
     "title2": {
-      "font": "NewYork-Semibold",
+      "font": "NewYorkLarge-Semibold",
       "_font": "SFPro-Semibold",
       "___font": "PPNeueMontreal-Medium",
       "____font": "PPNeueMontreal-Semibold",
@@ -315,7 +315,7 @@
     "title-mark2": {
       "color": "#5029304e",
       "size": 18,
-      "font": "NewYork-Regular",
+      "font": "NewYorkMedium-Regular",
       "_font": "SFPro-Light",
       "___font": "PPNeueMontreal-Book",
       "__font": "PPWriter-ThinText",
@@ -324,7 +324,7 @@
     },
 
     "title3": {
-      "font": "NewYork-Medium",
+      "font": "NewYorkMedium-Medium",
       "_font": "SFPro-Semibold",
       "___font": "PPNeueMontreal-Medium",
       "____font": "PPNeueMontreal-Semibold",
@@ -334,8 +334,8 @@
     },
     "title-mark3": {
       "color": "#5030395c",
-      "size": 14,
-      "font": "NewYork-Regular",
+      "size": 16,
+      "font": "NewYorkSmall-Regular",
       "_font": "SFPro-Light",
       "___font": "PPNeueMontreal-Book",
       "__font": "PPWriter-ThinText",
@@ -346,7 +346,7 @@
     "title4": {
       "color": "#363f66",
       "size": 18,
-      "font": "NewYork-Regular",
+      "font": "NewYorkMedium-Regular",
       "_font": "SFPro-Medium",
       "___font": "PPNeueMontreal-Medium",
       "__font": "PPWriter-Regular"
@@ -354,7 +354,7 @@
     "title-mark4": {
       "color": "#50363f66",
       "size": 14,
-      "font": "NewYork-Regular",
+      "font": "NewYorkSmall-Regular",
       "_font": "SFPro-Light",
       "___font": "PPNeueMontreal-Book",
       "__font": "PPWriter-ThinText",
@@ -370,7 +370,7 @@
     "attribute-right-colons": {
       "regex": "^([^:]{3,})(::)",
       "color": "#da8174",
-      "font": "SFPro-Medium",
+      "font": "SFProText-Medium",
       "_font": "PPNeueMontreal-Medium",
       "matchPosition": 2,
       "isMarkdownCharacter": true
@@ -548,7 +548,7 @@
     "deadline": {
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
-      "font": "SFPro-Semibold",
+      "font": "SFProText-Semibold",
       "_font": "PPNeueMontreal-Medium",
       "__font": "PPNeueMontreal-Semibold",
       "color": "#e94f2d"
@@ -557,7 +557,7 @@
     "unfinished": {
       "regex": "\\?\\?\\?",
       "color": "#fcfcfd",
-      "font": "SFPro-Light",
+      "font": "SFProText-Light",
       "_font": "PPNeueMontreal-Light",
       "backgroundColor": "#468666",
       "leftBorderPadding": 6,

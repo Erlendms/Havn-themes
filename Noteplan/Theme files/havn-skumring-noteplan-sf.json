@@ -113,8 +113,7 @@
     },
 
     "boldItalic": {
-      "COMMENT": "I haven't found a way to make this work, as there no such thing as .AppleSystemUIFontBoldItalic",
-      "font": ".AppleSystemUIFontBold"
+      "font": ".AppleSystemUIFontBoldItalic"
     },
     "boldItalic-left-mark": {
       "color": "#40d7dbea",
@@ -326,7 +325,7 @@
     },
     "title-mark3": {
       "color": "#50e5e7f1",
-      "size": 14,
+      "size": 16,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
       "font": ".AppleSystemUIFontLight",
