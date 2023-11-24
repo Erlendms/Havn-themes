@@ -303,6 +303,7 @@
     },
 
     "title2": {
+      "font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
       "___font": "PPNeueMontreal-Medium",
       "____font": "PPNeueMontreal-Semibold",
