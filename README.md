@@ -1,6 +1,6 @@
 # Havn-themes
 
-A collections of themes in the Havn colourway.
+A collections of themes in the _Havn_ colourway.
 
 ## Apps currently supported:
 
@@ -16,6 +16,11 @@ A collections of themes in the Havn colourway.
 - Code editors...
 
 Feel free to contact me if you have wishes for apps or if you want to make one!
+
+![Screenshot of light mode in Mona on iPhone](./Mona/Mona-screenshots/havn-daggry-mona-iphone.png)
+![Screenshot of dark mode in Mona on iPhone](./Mona/Mona-screenshots/havn-skumring-mona-iphone.png)
+![Screenshot of light mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png)
+![Screenshot of dark mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png)
 
 ## Naming
 
