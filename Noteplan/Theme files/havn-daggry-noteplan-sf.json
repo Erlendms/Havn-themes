@@ -1,6 +1,6 @@
 {
-  "name": "Havn Daggry Montreal",
-  "comment": "This uses Neue Montreal and Writer from Pangram Pangram - but only styles not only available in the full packages.",
+  "name": "Havn Daggry San Francisco",
+  "comment": "This is supposed to work without any extra fonts installed.",
   "style": "Light",
   "author": {
     "name": "Havn.blog",
@@ -73,7 +73,7 @@
   "styles": {
     "body": {
       "_font": "SFPro-Regular",
-      "font": "PPNeueMontreal-Regular",
+      "font": ".AppleSystemUIFont",
       "size": 16,
       "color": "#3e4a77",
       "lineSpacing": 2,
@@ -88,8 +88,7 @@
 
     "bold": {
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Bold",
-      "__font": "PPNeueMontreal-Semibold"
+      "font": ".AppleSystemUIFontBold"
     },
     "bold-left-mark": {
       "color": "#403e4a77",
@@ -102,7 +101,7 @@
 
     "italic": {
       "_font": "SFPro-RegularItalic",
-      "font": "PPNeueMontreal-Italic"
+      "font": ".AppleSystemUIFontItalic"
     },
     "italic-left-mark": {
       "color": "#403e4a77",
@@ -114,9 +113,8 @@
     },
 
     "boldItalic": {
-      "_font": "SFPro-SemiboldItalic",
-      "font": "PPNeueMontreal-BoldItalic",
-      "__font": "PPNeueMontreal-SemiboldItalic"
+      "COMMENT": "I haven't found a way to make this work, as there no such thing as .AppleSystemUIFontBoldItalic",
+      "font": ".AppleSystemUIFontBold"
     },
     "boldItalic-left-mark": {
       "color": "#403e4a77",
@@ -220,8 +218,7 @@
 
     "code": {
       "_font": "SFMono-Regular",
-      "__font": "PPNeueMontrealMono-Medium",
-      "font": "PPNeueMontrealMono-Book",
+      "font": "Menlo-Regular",
       "color": "#30395c",
       "backgroundColor": "#f2f3f8",
       "size": 14,
@@ -241,8 +238,7 @@
       "theme": "atelier-dune-light",
       "body": {
         "_font": "SFMono-Regular",
-        "font": "PPNeueMontrealMono-Medium",
-        "__font": "PPNeueMontrealMono-Book",
+        "font": "Menlo-Regular",
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
@@ -257,7 +253,7 @@
       },
       "language-specifier": {
         "_font": "SFMono-RegularItalic",
-        "font": "PPNeueMontrealMono-RegularItalic",
+        "font": "Menlo-Italic",
         "color": "#97a1c8",
         "size": 14,
         "paragraphSpacing": 0
@@ -279,10 +275,9 @@
     },
 
     "title1": {
-      "__font": "NewYork-Heavy",
+      "__font": "NewYork-Semibold",
       "_font": "SFPro-Bold",
-      "___font": "PPNeueMontreal-Bold",
-      "font": "PPWriter-Semibold",
+      "font": ".AppleSystemUIFontHeavy",
       "color": "#212840",
       "size": 26
     },
@@ -291,18 +286,16 @@
       "matchPosition": 1,
       "__font": "NewYork-Medium",
       "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
-      "font": "PPWriter-Medium",
+      "font": ".AppleSystemUIFontMedium",
       "color": "#212840",
       "size": 16
     },
     "title-mark1": {
       "color": "#50212840",
       "size": 20,
-      "__font": "NewYork-Regular",
+      "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "__font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
@@ -310,9 +303,7 @@
     "title2": {
       "__font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
-      "font": "PPWriter-Semibold",
+      "font": ".AppleSystemUIFontBold",
       "color": "#29304e",
       "size": 24
     },
@@ -321,18 +312,15 @@
       "size": 18,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
 
     "title3": {
-      "__font": "NewYork-Semibold",
+      "__font": "NewYork-Medium",
       "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
-      "font": "PPWriter-Medium",
+      "font": ".AppleSystemUIFontBold",
       "color": "#30395c",
       "size": 20
     },
@@ -341,8 +329,7 @@
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 6
     },
@@ -350,18 +337,16 @@
     "title4": {
       "color": "#363f66",
       "size": 18,
-      "__font": "NewYork-Medium",
+      "__font": "NewYork-Regular",
       "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
-      "font": "PPWriter-Regular"
+      "font": ".AppleSystemUIFontMedium"
     },
     "title-mark4": {
       "color": "#50363f66",
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 6
     },
@@ -375,7 +360,7 @@
       "regex": "^([^:]{3,})(::)",
       "color": "#da8174",
       "_font": "SFPro-Medium",
-      "font": "PPNeueMontreal-Medium",
+      "font": ".AppleSystemUIFontMedium",
       "matchPosition": 2,
       "isMarkdownCharacter": true
     },
@@ -385,7 +370,7 @@
       "matchPosition": 1,
       "color": "#809b73ab",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags": {
@@ -393,7 +378,7 @@
       "matchPosition": 2,
       "color": "#a986b6",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags-closer": {
@@ -401,7 +386,7 @@
       "matchPosition": 3,
       "color": "#809b73ab",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags-commented-out": {
@@ -409,7 +394,7 @@
       "matchPosition": 1,
       "color": "#779b73ab",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
 
@@ -553,8 +538,7 @@
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Medium",
-      "__font": "PPNeueMontreal-Semibold",
+      "font": ".AppleSystemUIFontBold",
       "color": "#e94f2d"
     },
 
@@ -562,7 +546,7 @@
       "regex": "\\?\\?\\?",
       "color": "#fcfcfd",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Light",
+      "font": ".AppleSystemUIFontThin",
       "backgroundColor": "#468666",
       "leftBorderPadding": 6,
       "rightBorderPadding": 6,
@@ -591,9 +575,8 @@
 
     "special-char": {
       "COMMENT": "Is this needed?",
-      "__font": "SFMono-Semibold",
-      "_font": "PPNeueMontreal-Medium",
-      "font": "PPNeueMontrealMono-Bold"
+      "_font": "SFMono-Semibold",
+      "font": "Menlo-Bold"
     },
 
     "markdown-link": {

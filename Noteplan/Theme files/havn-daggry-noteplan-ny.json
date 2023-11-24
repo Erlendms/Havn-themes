@@ -1,5 +1,6 @@
 {
-  "name": "Havn Daggry NY",
+  "name": "Havn Daggry New York",
+  "comment": "This uses Apple's fonts (SF Pro, SF Mono and New York) that you can download freely - but you need to do it on iOS as well.",
   "style": "Light",
   "author": {
     "name": "Havn.blog",
@@ -114,6 +115,14 @@
     "boldItalic": {
       "font": "SFPro-SemiboldItalic",
       "_font": "PPNeueMontreal-BoldItalic"
+    },
+    "boldItalic-left-mark": {
+      "color": "#403e4a77",
+      "size": 12
+    },
+    "boldItalic-right-mark": {
+      "color": "#403e4a77",
+      "size": 12
     },
 
     "underline": {

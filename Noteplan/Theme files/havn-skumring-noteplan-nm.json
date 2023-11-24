@@ -1,5 +1,6 @@
 {
-  "name": "Havn Skumring FM",
+  "name": "Havn Skumring Montreal",
+  "comment": "This uses Neue Montreal and Writer from Pangram Pangram - but only styles not only available in the full packages.",
   "style": "Dark",
   "author": {
     "name": "Havn.blog",

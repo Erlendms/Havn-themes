@@ -1,23 +1,23 @@
 {
-  "name": "Havn Daggry Montreal",
-  "comment": "This uses Neue Montreal and Writer from Pangram Pangram - but only styles not only available in the full packages.",
-  "style": "Light",
+  "name": "Havn Skumring San Francisco",
+  "comment": "This is supposed to work without any extra fonts installed.",
+  "style": "Dark",
   "author": {
     "name": "Havn.blog",
     "email": "post@havn.online"
   },
   "editor": {
-    "backgroundColor": "#fcfcfd",
-    "altBackgroundColor": "#f2f3f8",
-    "tintColor": "386a51",
-    "tintColor2": "#9b73ab",
-    "textColor": "#212840",
-    "toolbarBackgroundColor": "#f2f3f8",
-    "toolbarIconColor": "#3e4a77",
-    "menuItemColor": "#3e4a77",
+    "backgroundColor": "#1a1e30",
+    "altBackgroundColor": "#121521",
+    "tintColor": "#54a094",
+    "tintColor2": "#b699c2",
+    "textColor": "#eef0f6",
+    "toolbarBackgroundColor": "#121521",
+    "toolbarIconColor": "#d7dbea",
+    "menuItemColor": "#d7dbea",
     "timeBlockColor": "#da8174",
-    "sidebarStyleOverride": "light",
-    "sidebarIconColorOverride": "#3e4a77",
+    "sidebarStyleOverride": "dark",
+    "sidebarIconColorOverride": "#d7dbea",
     "shouldOverwriteFont": false
   },
   "orderedStyles": [
@@ -55,12 +55,12 @@
     "highlighted",
     "highlighted-left-marker",
     "highlighted-right-marker",
-    "working-on",
+    "starred",
     "flagged-1",
     "flagged-2",
     "flagged-3",
     "todo",
-    "starred",
+    "working-on",
     "deadline",
     "hashtag",
     "attag",
@@ -73,9 +73,9 @@
   "styles": {
     "body": {
       "_font": "SFPro-Regular",
-      "font": "PPNeueMontreal-Regular",
+      "font": ".AppleSystemUIFont",
       "size": 16,
-      "color": "#3e4a77",
+      "color": "#d7dbea",
       "lineSpacing": 2,
       "paragraphSpacingBefore": 1,
       "paragraphSpacing": 6
@@ -88,55 +88,53 @@
 
     "bold": {
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Bold",
-      "__font": "PPNeueMontreal-Semibold"
+      "font": ".AppleSystemUIFontBold"
     },
     "bold-left-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
     "bold-right-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
 
     "italic": {
       "_font": "SFPro-RegularItalic",
-      "font": "PPNeueMontreal-Italic"
+      "font": ".AppleSystemUIFontItalic"
     },
     "italic-left-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
     "italic-right-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
 
     "boldItalic": {
-      "_font": "SFPro-SemiboldItalic",
-      "font": "PPNeueMontreal-BoldItalic",
-      "__font": "PPNeueMontreal-SemiboldItalic"
+      "COMMENT": "I haven't found a way to make this work, as there no such thing as .AppleSystemUIFontBoldItalic",
+      "font": ".AppleSystemUIFontBold"
     },
     "boldItalic-left-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
     "boldItalic-right-mark": {
-      "color": "#403e4a77",
+      "color": "#40d7dbea",
       "size": 12
     },
 
     "underline": {
       "underlineStyle": 1,
-      "underlineColor": "#468666"
+      "underlineColor": "#40786f"
     },
     "underline-left-tilde": {
-      "color": "#468666",
+      "color": "#40786f",
       "size": 12
     },
     "underline-right-tilde": {
-      "color": "#468666",
+      "color": "#40786f",
       "size": 12
     },
 
@@ -146,7 +144,7 @@
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true,
       "color": "#97a1c8",
-      "strikethroughColor": "#3a4a77"
+      "strikethroughColor": "#aad7dbea"
     },
     "strikethrough-left-tilde": {
       "__regex": "(~~)([^~]+)(~~)",
@@ -169,8 +167,8 @@
 
     "highlighted": {
       "__regex": "(==)([^\\s].+?)(==)",
-      "backgroundColor": "#20da8174",
-      "color": "#30395c",
+      "backgroundColor": "#40da8174",
+      "color": "#e5e7f1",
       "leftBorderPadding": 6,
       "rightBorderPadding": 6,
       "borderRadius": 6,
@@ -203,27 +201,26 @@
       "matchPosition": 2,
       "isRevealOnCursorRange": true,
       "isHiddenWithoutCursor": true,
-      "color": "#a986b6"
+      "color": "#b699c2"
     },
     "inline-comment-mark-start": {
       "regex": "(%%)",
       "matchPosition": 0,
       "isMarkdownCharacter": true,
-      "color": "#9b73ab"
+      "color": "#9f79af"
     },
     "inline-comment-mark-end": {
       "regex": "(%%)",
       "matchPosition": 0,
       "isMarkdownCharacter": true,
-      "color": "#9b73ab"
+      "color": "#9f79af"
     },
 
     "code": {
       "_font": "SFMono-Regular",
-      "__font": "PPNeueMontrealMono-Medium",
-      "font": "PPNeueMontrealMono-Book",
-      "color": "#30395c",
-      "backgroundColor": "#f2f3f8",
+      "font": "Menlo-Regular",
+      "color": "#e5e7f1",
+      "backgroundColor": "#121521",
       "size": 14,
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
@@ -238,15 +235,14 @@
     },
 
     "code-fence": {
-      "theme": "atelier-dune-light",
+      "theme": "atelier-plateau-dark",
       "body": {
         "_font": "SFMono-Regular",
-        "font": "PPNeueMontrealMono-Medium",
-        "__font": "PPNeueMontrealMono-Book",
+        "font": "Menlo-Regular",
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
-        "backgroundColor": "#f2f3f8"
+        "backgroundColor": "#121521"
       },
       "corner-radius": 8,
       "fence-open": {
@@ -257,7 +253,7 @@
       },
       "language-specifier": {
         "_font": "SFMono-RegularItalic",
-        "font": "PPNeueMontrealMono-RegularItalic",
+        "font": "Menlo-Italic",
         "color": "#97a1c8",
         "size": 14,
         "paragraphSpacing": 0
@@ -265,13 +261,13 @@
     },
 
     "quote-mark": {
-      "color": "#386a51",
+      "color": "#40786f",
       "font": "noteplanstate",
       "headIndent": 33,
       "size": 16
     },
     "quote-content": {
-      "color": "#363f66",
+      "color": "#e5e7f1",
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4,
@@ -279,11 +275,10 @@
     },
 
     "title1": {
-      "__font": "NewYork-Heavy",
+      "__font": "NewYork-Semibold",
       "_font": "SFPro-Bold",
-      "___font": "PPNeueMontreal-Bold",
-      "font": "PPWriter-Semibold",
-      "color": "#212840",
+      "font": ".AppleSystemUIFontHeavy",
+      "color": "#eef0f6",
       "size": 26
     },
     "title-in-frontmatter": {
@@ -291,18 +286,16 @@
       "matchPosition": 1,
       "__font": "NewYork-Medium",
       "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
-      "font": "PPWriter-Medium",
-      "color": "#212840",
+      "font": ".AppleSystemUIFontMedium",
+      "color": "#eef0f6",
       "size": 16
     },
     "title-mark1": {
-      "color": "#50212840",
+      "color": "#50eef0f6",
       "size": 20,
-      "__font": "NewYork-Regular",
+      "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "__font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
@@ -310,58 +303,50 @@
     "title2": {
       "__font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
-      "font": "PPWriter-Semibold",
-      "color": "#29304e",
+      "font": ".AppleSystemUIFontBold",
+      "color": "#eaecf4",
       "size": 24
     },
     "title-mark2": {
-      "color": "#5029304e",
+      "color": "#50eaecf4",
       "size": 18,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
 
     "title3": {
-      "__font": "NewYork-Semibold",
+      "__font": "NewYork-Medium",
       "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
-      "font": "PPWriter-Medium",
-      "color": "#30395c",
+      "font": ".AppleSystemUIFontBold",
+      "color": "#e5e7f1",
       "size": 20
     },
     "title-mark3": {
-      "color": "#5030395c",
+      "color": "#50e5e7f1",
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 6
     },
 
     "title4": {
-      "color": "#363f66",
+      "color": "#dde0ed",
       "size": 18,
-      "__font": "NewYork-Medium",
+      "__font": "NewYork-Regular",
       "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
-      "font": "PPWriter-Regular"
+      "font": ".AppleSystemUIFontMedium"
     },
     "title-mark4": {
-      "color": "#50363f66",
+      "color": "#50dde0ed",
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
-      "font": "PPWriter-ThinText",
+      "font": ".AppleSystemUIFontLight",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 6
     },
@@ -375,7 +360,7 @@
       "regex": "^([^:]{3,})(::)",
       "color": "#da8174",
       "_font": "SFPro-Medium",
-      "font": "PPNeueMontreal-Medium",
+      "font": ".AppleSystemUIFontMedium",
       "matchPosition": 2,
       "isMarkdownCharacter": true
     },
@@ -383,33 +368,33 @@
     "Templates_tags-opener": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 1,
-      "color": "#809b73ab",
+      "color": "#809f79af",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 2,
-      "color": "#a986b6",
+      "color": "#9f79af",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags-closer": {
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 3,
-      "color": "#809b73ab",
+      "color": "#809f79af",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
     "Templates_tags-commented-out": {
       "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
       "matchPosition": 1,
-      "color": "#779b73ab",
+      "color": "#779f79af",
       "_font": "SFMono-Regular",
-      "font": "PPNeueMontrealMono-Medium",
+      "font": "Menlo-Regular",
       "size": 14
     },
 
@@ -417,7 +402,7 @@
       "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
       "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
       "matchPosition": 1,
-      "color": "#52629e",
+      "color": "#97a1c8",
       "lineSpacing": 0.8,
       "paragraphSpacing": 0,
       "paragraphSpacingBefore": 0
@@ -433,17 +418,18 @@
     "todo": {
       "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
-      "color": "#386a51",
-      "backgroundColor": "fcfcfd",
-      "rightBorderPadding": 6,
-      "borderRadius": 1,
+      "color": "#40786f",
+      "backgroundColor": "1a1e30",
+      "rightBorderPadding": 0,
+      "leftBorderPadding": 0,
+      "borderRadius": 0.1,
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
     "checked": {
-      "color": "#97a1c8",
-      "backgroundColor": "fcfcfd",
+      "color": "#52629e",
+      "backgroundColor": "1a1e30",
       "borderRadius": 1,
       "headIndent": 33,
       "lineSpacing": 0.9,
@@ -470,15 +456,15 @@
       "regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
       "matchPosition": 3,
       "color": "#80e8b017",
-      "strikethroughColor": "#50e8b017",
+      "strikethroughColor": "#99e8b017",
       "strikethroughStyle": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
 
     "done-date": {
-      "color": "#97a1c8",
-      "backgroundColor": "#40f2f3f8",
+      "color": "#52629e",
+      "backgroundColor": "#090b11",
       "leftBorderPadding": 5,
       "rightBorderPadding": 5,
       "borderRadius": 6,
@@ -487,8 +473,8 @@
     },
 
     "working-on": {
-      "backgroundColor": "#20468666",
-      "color": "#30395c",
+      "backgroundColor": "#5040786f",
+      "color": "#e5e7f1",
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
@@ -496,8 +482,8 @@
     "starred": {
       "regex": "(^|\\v)(.*[⭐⭐️💫⭐︎].*)($|\\v)",
       "matchPosition": 2,
-      "backgroundColor": "#80eec659",
-      "color": "30395c",
+      "backgroundColor": "#bb74580c",
+      "color": "e5e7f1",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -510,7 +496,7 @@
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
       "__matchPosition": 2,
       "backgroundColor": "#30e9745a",
-      "color": "#30395c",
+      "color": "#e5e7f1",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -522,7 +508,7 @@
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
       "__matchPosition": 2,
       "backgroundColor": "#40e96143",
-      "color": "#29304e",
+      "color": "#eaecf4",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -534,7 +520,7 @@
       "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
       "__matchPosition": 2,
       "backgroundColor": "#50e94f2d",
-      "color": "#212840",
+      "color": "#eef0f6",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -553,17 +539,16 @@
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Medium",
-      "__font": "PPNeueMontreal-Semibold",
-      "color": "#e94f2d"
+      "font": ".AppleSystemUIFontBold",
+      "color": "#ed7054"
     },
 
     "unfinished": {
       "regex": "\\?\\?\\?",
-      "color": "#fcfcfd",
+      "color": "#1a1e30",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Light",
-      "backgroundColor": "#468666",
+      "font": ".AppleSystemUIFontThin",
+      "backgroundColor": "#40786f",
       "leftBorderPadding": 6,
       "rightBorderPadding": 6,
       "borderRadius": 6,
@@ -571,8 +556,8 @@
     },
 
     "hashtag": {
-      "color": "#52629e",
-      "backgroundColor": "#1052629e",
+      "color": "#97a1c8",
+      "backgroundColor": "#2052629e",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -580,8 +565,8 @@
       "type": ""
     },
     "attag": {
-      "color": "#9b73ab",
-      "backgroundColor": "#10a986b6",
+      "color": "#b699c2",
+      "backgroundColor": "#209f79af",
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
       "borderRadius": 6,
@@ -591,9 +576,8 @@
 
     "special-char": {
       "COMMENT": "Is this needed?",
-      "__font": "SFMono-Semibold",
-      "_font": "PPNeueMontreal-Medium",
-      "font": "PPNeueMontrealMono-Bold"
+      "_font": "SFMono-Semibold",
+      "font": "Menlo-Bold"
     },
 
     "markdown-link": {
@@ -637,14 +621,14 @@
     "NoteLinks-left-brackets": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 1,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
     "NoteLinks-right-brackets": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 3,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
@@ -675,28 +659,28 @@
       "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
       "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 1,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
     "URL-link-right-square-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 3,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
     "URL-link-left-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 4,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
     "URL-link-right-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 6,
-      "color": " #8052629e",
+      "color": " #8097a1c8",
       "isMarkdownCharacter": true,
       "isRevealOnCursorRange": true
     },
