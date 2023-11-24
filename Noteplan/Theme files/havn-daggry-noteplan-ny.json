@@ -1,0 +1,743 @@
+{
+  "name": "Havn Daggry NY",
+  "style": "Light",
+  "author": {
+    "name": "Havn.blog",
+    "email": "post@havn.online"
+  },
+  "editor": {
+    "backgroundColor": "#fcfcfd",
+    "altBackgroundColor": "#f2f3f8",
+    "tintColor": "386a51",
+    "tintColor2": "#9b73ab",
+    "textColor": "#212840",
+    "toolbarBackgroundColor": "#f2f3f8",
+    "toolbarIconColor": "#3e4a77",
+    "menuItemColor": "#3e4a77",
+    "timeBlockColor": "#da8174",
+    "sidebarStyleOverride": "light",
+    "sidebarIconColorOverride": "#3e4a77",
+    "shouldOverwriteFont": false
+  },
+  "orderedStyles": [
+    "title-mark1",
+    "title-mark2",
+    "title-mark3",
+    "body",
+    "quote-content",
+    "bold",
+    "bold-left-mark",
+    "bold-right-mark",
+    "italic",
+    "italic-left-mark",
+    "italic-right-mark",
+    "boldItalic",
+    "boldItalic-left-mark",
+    "boldItalic-right-mark",
+    "code",
+    "code-left-backtick",
+    "code-right-backtick",
+    "special-char",
+    "checked-todo-characters",
+    "checked-scheduled",
+    "quote-mark",
+    "tabbed",
+    "NoteLinks-main",
+    "link",
+    "Timeblock-Hide-Tag",
+    "schedule-to-date-link",
+    "schedule-from-date-link",
+    "title1",
+    "title2",
+    "title3",
+    "note-title-link",
+    "highlighted",
+    "highlighted-left-marker",
+    "highlighted-right-marker",
+    "working-on",
+    "flagged-1",
+    "flagged-2",
+    "flagged-3",
+    "todo",
+    "starred",
+    "deadline",
+    "hashtag",
+    "attag",
+    "timeblocks",
+    "checked",
+    "checked-canceled",
+    "checked-canceled-text",
+    "done-date"
+  ],
+  "styles": {
+    "body": {
+      "font": "SFPro-Regular",
+      "_font": "PPNeueMontreal-Regular",
+      "size": 16,
+      "color": "#3e4a77",
+      "lineSpacing": 2,
+      "paragraphSpacingBefore": 1,
+      "paragraphSpacing": 6
+    },
+
+    "tabbed": {
+      "COMMENT": "for anything indented",
+      "headIndent": 43
+    },
+
+    "bold": {
+      "font": "SFPro-Semibold",
+      "_font": "PPNeueMontreal-Bold"
+    },
+    "bold-left-mark": {
+      "color": "#403e4a77",
+      "size": 12
+    },
+    "bold-right-mark": {
+      "color": "#403e4a77",
+      "size": 12
+    },
+
+    "italic": {
+      "font": "SFPro-RegularItalic",
+      "_font": "PPNeueMontreal-Italic"
+    },
+    "italic-left-mark": {
+      "color": "#403e4a77",
+      "size": 12
+    },
+    "italic-right-mark": {
+      "color": "#403e4a77",
+      "size": 12
+    },
+
+    "boldItalic": {
+      "font": "SFPro-SemiboldItalic",
+      "_font": "PPNeueMontreal-BoldItalic"
+    },
+
+    "underline": {
+      "underlineStyle": 1,
+      "underlineColor": "#468666"
+    },
+    "underline-left-tilde": {
+      "color": "#468666",
+      "size": 12
+    },
+    "underline-right-tilde": {
+      "color": "#468666",
+      "size": 12
+    },
+
+    "strikethrough": {
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 2,
+      "strikethroughStyle": 2,
+      "isRevealOnCursorRange": true,
+      "color": "#97a1c8",
+      "strikethroughColor": "#3a4a77"
+    },
+    "strikethrough-left-tilde": {
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#97a1c8",
+      "size": 12,
+      "isRevealOnCursorRange": true
+    },
+    "strikethrough-right-tilde": {
+      "__regex": "(~~)([^~]+)(~~)",
+      "__matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "color": "#97a1c8",
+      "size": 12,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+
+    "highlighted": {
+      "__regex": "(==)([^\\s].+?)(==)",
+      "backgroundColor": "#20da8174",
+      "color": "#30395c",
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6,
+      "borderRadius": 6,
+      "horizontalMargin": 6,
+      "order": 35,
+      "__matchPosition": 2,
+      "isRevealOnCursorRange": true
+    },
+    "highlighted-left-marker": {
+      "__regex": "(==)([^\\s].+?)(==)",
+      "color": "#99da8174",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "__matchPosition": 1
+    },
+    "highlighted-right-marker": {
+      "__regex": "(==)([^\\s].+?)(==)",
+      "color": "#99da8174",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "__matchPosition": 3
+    },
+
+    "inline-comment": {
+      "regex": "(%)(%([^%]+)%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#a986b6"
+    },
+    "inline-comment-mark-start": {
+      "regex": "(%%)",
+      "matchPosition": 0,
+      "isMarkdownCharacter": true,
+      "color": "#9b73ab"
+    },
+    "inline-comment-mark-end": {
+      "regex": "(%%)",
+      "matchPosition": 0,
+      "isMarkdownCharacter": true,
+      "color": "#9b73ab"
+    },
+
+    "code": {
+      "font": "SFMono-Regular",
+      "_font": "PPNeueMontrealMono-Medium",
+      "color": "#30395c",
+      "backgroundColor": "#f2f3f8",
+      "size": 14,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2
+    },
+    "code-left-backtick": {
+      "color": "#97a1c8"
+    },
+    "code-right-backtick": {
+      "color": "#97a1c8"
+    },
+
+    "code-fence": {
+      "theme": "atelier-dune-light",
+      "body": {
+        "font": "SFMono-Regular",
+        "_font": "PPNeueMontrealMono-Medium",
+        "paragraphSpacingBefore": 0,
+        "paragraphSpacing": 0,
+        "size": 14,
+        "backgroundColor": "#f2f3f8"
+      },
+      "corner-radius": 8,
+      "fence-open": {
+        "color": "#97a1c8"
+      },
+      "fence-close": {
+        "color": "#97a1c8"
+      },
+      "language-specifier": {
+        "font": "SFMono-RegularItalic",
+        "_font": "PPNeueMontrealMono-RegularItalic",
+        "color": "#97a1c8",
+        "size": 14,
+        "paragraphSpacing": 0
+      }
+    },
+
+    "quote-mark": {
+      "color": "#386a51",
+      "font": "noteplanstate",
+      "headIndent": 33,
+      "size": 16
+    },
+    "quote-content": {
+      "color": "#363f66",
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "paragraphSpacingBefore": 0
+    },
+
+    "title1": {
+      "font": "NewYork-Heavy",
+      "_font": "SFPro-Bold",
+      "__font": "PPNeueMontreal-Bold",
+      "color": "#212840",
+      "size": 26
+    },
+    "title-in-frontmatter": {
+      "regex": "^[tT]itle:\\s+(.*)",
+      "matchPosition": 1,
+      "font": "NewYork-Medium",
+      "_font": "SFPro-Medium",
+      "__font": "PPNeueMontreal-Medium",
+      "color": "#212840",
+      "size": 16
+    },
+    "title-mark1": {
+      "color": "#50212840",
+      "size": 20,
+      "font": "NewYork-Regular",
+      "_font": "SFPro-Light",
+      "__font": "PPNeueMontreal-Book",
+      "paragraphSpacingBefore": 18,
+      "paragraphSpacing": 9
+    },
+
+    "title2": {
+      "font": "NewYork-Semibold",
+      "_font": "SFPro-Semibold",
+      "__font": "PPNeueMontreal-Medium",
+      "color": "#29304e",
+      "size": 24
+    },
+    "title-mark2": {
+      "color": "#5029304e",
+      "size": 18,
+      "font": "NewYork-Regular",
+      "_font": "SFPro-Light",
+      "__font": "PPNeueMontreal-Book",
+      "paragraphSpacingBefore": 16,
+      "paragraphSpacing": 6
+    },
+
+    "title3": {
+      "font": "NewYork-Semibold",
+      "_font": "SFPro-Semibold",
+      "__font": "PPNeueMontreal-Medium",
+      "color": "#30395c",
+      "size": 20
+    },
+    "title-mark3": {
+      "color": "#5030395c",
+      "size": 14,
+      "font": "NewYork-Regular",
+      "_font": "SFPro-Light",
+      "__font": "PPNeueMontreal-Book",
+      "paragraphSpacingBefore": 14,
+      "paragraphSpacing": 6
+    },
+
+    "title4": {
+      "color": "#363f66",
+      "size": 18,
+      "font": "NewYork-Medium",
+      "_font": "SFPro-Medium",
+      "__font": "PPNeueMontreal-Medium"
+    },
+    "title-mark4": {
+      "color": "#50363f66",
+      "size": 14,
+      "font": "NewYork-Regular",
+      "_font": "SFPro-Light",
+      "__font": "PPNeueMontreal-Book",
+      "paragraphSpacingBefore": 12,
+      "paragraphSpacing": 6
+    },
+
+    "attribute": {
+      "regex": "^([^:]{3,})(::)",
+      "color": "#da8174",
+      "matchPosition": 1
+    },
+    "attribute-right-colons": {
+      "regex": "^([^:]{3,})(::)",
+      "color": "#da8174",
+      "font": "SFPro-Medium",
+      "_font": "PPNeueMontreal-Medium",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true
+    },
+
+    "Templates_tags-opener": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#809b73ab",
+      "font": "SFMono-Regular",
+      "_font": "PPNeueMontrealMono-Medium",
+      "size": 14
+    },
+    "Templates_tags": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 2,
+      "color": "#a986b6",
+      "font": "SFMono-Regular",
+      "_font": "PPNeueMontrealMono-Medium",
+      "size": 14
+    },
+    "Templates_tags-closer": {
+      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+      "matchPosition": 3,
+      "color": "#809b73ab",
+      "font": "SFMono-Regular",
+      "_font": "PPNeueMontrealMono-Medium",
+      "size": 14
+    },
+    "Templates_tags-commented-out": {
+      "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
+      "matchPosition": 1,
+      "color": "#779b73ab",
+      "font": "SFMono-Regular",
+      "_font": "PPNeueMontrealMono-Medium",
+      "size": 14
+    },
+
+    "field-key": {
+      "COMMENT": "Simplified form of YAML field identification, limited to 25 chars in field name at start of line",
+      "regex": "^([^\\h#:\\-\\+\\*][\\s\\w]{3,26})(:\\h+)(?=[\\w\\d@!#]+)",
+      "matchPosition": 1,
+      "color": "#52629e",
+      "lineSpacing": 0.8,
+      "paragraphSpacing": 0,
+      "paragraphSpacingBefore": 0
+    },
+
+    "checked-todo-characters": {
+      "font": "noteplanstate",
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+
+    "todo": {
+      "COMMENT": "Covers todos and bullets",
+      "font": "noteplanstate",
+      "color": "#386a51",
+      "backgroundColor": "fcfcfd",
+      "rightBorderPadding": 6,
+      "borderRadius": 1,
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked": {
+      "color": "#97a1c8",
+      "backgroundColor": "fcfcfd",
+      "borderRadius": 1,
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked-scheduled": {
+      "regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
+      "matchPosition": 0,
+      "color": "#e94f2d",
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked-canceled": {
+      "COMMENT": "Covers whole line, colouring it",
+      "regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
+      "color": "#80e8b017",
+      "headIndent": 33,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "checked-canceled-text": {
+      "COMMENT": "Strikes out just the text",
+      "regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
+      "matchPosition": 3,
+      "color": "#80e8b017",
+      "strikethroughColor": "#50e8b017",
+      "strikethroughStyle": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+
+    "done-date": {
+      "color": "#97a1c8",
+      "backgroundColor": "#40f2f3f8",
+      "leftBorderPadding": 5,
+      "rightBorderPadding": 5,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "size": 14
+    },
+
+    "working-on": {
+      "backgroundColor": "#20468666",
+      "color": "#30395c",
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+
+    "starred": {
+      "regex": "(^|\\v)(.*[⭐⭐️💫⭐︎].*)($|\\v)",
+      "matchPosition": 2,
+      "backgroundColor": "#80eec659",
+      "color": "30395c",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+
+    "flagged-1": {
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
+      "__matchPosition": 2,
+      "backgroundColor": "#30e9745a",
+      "color": "#30395c",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 3
+    },
+    "flagged-2": {
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
+      "__matchPosition": 2,
+      "backgroundColor": "#40e96143",
+      "color": "#29304e",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 3
+    },
+    "flagged-3": {
+      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
+      "__matchPosition": 2,
+      "backgroundColor": "#50e94f2d",
+      "color": "#212840",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 3
+    },
+
+    "timeblocks": {
+      "regex": "(?:^\\s*(?:\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
+      "matchPosition": 1,
+      "color": "#da8174"
+    },
+
+    "deadline": {
+      "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
+      "matchPosition": 1,
+      "font": "SFPro-Semibold",
+      "_font": "PPNeueMontreal-Medium",
+      "__font": "PPNeueMontreal-Semibold",
+      "color": "#e94f2d"
+    },
+
+    "unfinished": {
+      "regex": "\\?\\?\\?",
+      "color": "#fcfcfd",
+      "font": "SFPro-Light",
+      "_font": "PPNeueMontreal-Light",
+      "backgroundColor": "#468666",
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6,
+      "borderRadius": 6,
+      "horizontalMargin": 7
+    },
+
+    "hashtag": {
+      "color": "#52629e",
+      "backgroundColor": "#1052629e",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "type": ""
+    },
+    "attag": {
+      "color": "#9b73ab",
+      "backgroundColor": "#10a986b6",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "type": ""
+    },
+
+    "special-char": {
+      "COMMENT": "Is this needed?",
+      "font": "SFMono-Semibold",
+      "_font": "PPNeueMontreal-Medium",
+      "__font": "PPNeueMontrealMono-Bold"
+    },
+
+    "markdown-link": {
+      "COMMENT": "Doesn't work? Pink to test.",
+      "color": "#EB57FF"
+    },
+    "markdown-link-url": {
+      "COMMENT": "Doesn't work? Blue to test.",
+      "color": "#5764FF"
+    },
+    "link": {
+      "COMMENT": "Doesn't work? Green to test.",
+      "color": "#57FF84"
+    },
+    "time": {
+      "COMMENT": "Doesn't work? Yellow/Green to test.",
+      "color": "#B3FF57"
+    },
+    "schedule-to-date-link": {
+      "COMMENT": "Doesn't work? Light brown to test.",
+      "color": "#E8AE9B"
+    },
+    "schedule-from-date-link": {
+      "COMMENT": "Doesn't work? Light brown to test.",
+      "color": "#E8AE9B"
+    },
+    "note-title-link": {
+      "COMMENT": "Doesn't work? Light orange to test.",
+      "color": "#FF8D57"
+    },
+    "phonenumber": {
+      "COMMENT": "How do I render? Don't know if it works.",
+      "color": "#769EB3"
+    },
+
+    "NoteLinks-main": {
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
+      "matchPosition": 2,
+      "color": "#386a51"
+    },
+    "NoteLinks-left-brackets": {
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
+      "matchPosition": 1,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "NoteLinks-right-brackets": {
+      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
+      "matchPosition": 3,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "NoteLinks-main-done": {
+      "COMMENT": "Turned off",
+      "_regex": "(?:^|\\h)(x\\[\\[)(.*?)(\\]\\])",
+      "_matchPosition": 1,
+      "_isMarkdownCharacter": true,
+      "_isRevealOnCursorRange": true,
+      "_font": "noteplanstate",
+      "_color": "#97B853"
+    },
+    "NoteLinks-main-cancelled": {
+      "COMMENT": "Turned off",
+      "_regex": "(?:^|\\h)(-\\[\\[)(.*?)(\\]\\])",
+      "_matchPosition": 1,
+      "_isMarkdownCharacter": true,
+      "_isRevealOnCursorRange": true,
+      "_font": "noteplanstate",
+      "_color": "#C5487A"
+    },
+    "URL-link": {
+      "_regex": "\\[[^]]*?\\]\\(.*?\\)",
+      "_isRevealOnCursorRange": true,
+      "COMMENT": "Turned off. Put cursor anywhere in markdown link and the []() syntax will be revealed. The following 4 do the hiding the rest of the time."
+    },
+    "URL-link-left-square-bracket": {
+      "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
+      "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 1,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "URL-link-right-square-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 3,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "URL-link-left-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 4,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "URL-link-right-bracket": {
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "matchPosition": 6,
+      "color": " #8052629e",
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+
+    "#waiting": {
+      "COMMENT": "Turned off.",
+      "_regex": "^* (.*#waiting.*)$",
+      "_matchPosition": 1,
+      "_textColor": "#222E3388",
+      "_font": "PPNeueMontreal-Italic"
+    },
+    "eventID": {
+      "COMMENT": "Turned off.",
+      "_regex": "(event:[A-F0-9-]{36,37})",
+      "_matchPosition": 1,
+      "_color": "#CCA949",
+      "_isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": false
+    },
+
+    "arrow-link": {
+      "regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "backgroundColor": "#10468666",
+      "leftBorderPadding": 10,
+      "rightBorderPadding": 9,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "isRevealOnCursorRange": true,
+      "type": "noteLink",
+      "prefix": "noteplan://x-callback-url/openNote?noteTitle="
+    },
+    "arrow-left-delimiter": {
+      "regex": "(>)(\\S[^<]*)(<)",
+      "matchPosition": 1,
+      "color": "#8052629e",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "arrow-right-delimiter": {
+      "regex": "(>)(\\S[^<]*)(<)",
+      "matchPosition": 3,
+      "color": "#8052629e",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true
+    },
+    "verse-indicator": {
+      "COMMENT": "Turned off.",
+      "_regex": "(§)(.*)",
+      "_matchPosition": 1,
+      "_isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": true,
+      "_isMarkdownCharacter": true,
+      "_color": "#8097a1c8"
+    },
+    "verse-text": {
+      "COMMENT": "Turned off.",
+      "_regex": "(¶)(.*)",
+      "_matchPosition": 2,
+      "_color": "#F04060",
+      "_backgroundColor": "#f0f0f0",
+      "_borderRadius": 4
+    }
+  }
+}
