@@ -24,10 +24,10 @@ But the themes ofc. works with standard fonts as well! Apple is a bit stingy wit
 The idea behind the colours, is to have a maritime feel with a couple of accents. The main colours are all shades of the same blue (same _hue_ and _saturation_, with just differing _lightness_) - the backgrounds are very light (or very dark) blue, and the text is the opposite. The higher in the hierarcy a header is, the more contrast the text has.
 
 Here's the main text colours. _Daggry_ left, _Skumring_ right (in parentheses):
-   backgroundColour: #fcfcfd (#1a1e30)
-altBackgroundColour: #f2f3f8 (#121521)
-                 h1: #212840 (#eef0f6)
-                 h2: #29304e (#eaecf4)
-                 h3: #30395c (#e5e7f1)
-                 h4: #363f66 (#dde0ed)
-       mainContrast: #3e4a77 (#d7dbea)
+* backgroundColour: #fcfcfd (#1a1e30)
+* altBackgroundColour: #f2f3f8 (#121521)
+* h1: #212840 (#eef0f6)
+* h2: #29304e (#eaecf4)
+* h3: #30395c (#e5e7f1)
+* h4: #363f66 (#dde0ed)
+* mainContrast: #3e4a77 (#d7dbea)
