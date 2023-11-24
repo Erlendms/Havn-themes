@@ -26,7 +26,7 @@ Feel free to contact me if you have wishes for apps or if you want to make one!
 
 ## Naming
 
-_Havn_ means _harbour_ in Norwegian, and I've named [my blog](https://havn.blog) that, as it's supposed to be a safe haven for my (too many) thoughts, that I always carry with me.
+_Havn_ means _harbour_ in Norwegian, and I've named [my blog](https://havn.blog) (Under construction) that, as it's supposed to be a safe haven for my (too many) thoughts, that I always carry with me.
 
 The light version is called _Daggry_, which means _dawn_,
 and the dark version is called _Skumring_, which means _dusk_.
