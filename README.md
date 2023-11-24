@@ -18,16 +18,11 @@ A collections of themes in the _Havn_ colourway.
 Feel free to contact me if you have wishes for apps or if you want to make one!
 
 <p float="left">
-  <img src="./Mona/Mona-screenshots/havn-daggry-mona-iphone.png" width="100" />
-  <img src="./Mona/Mona-screenshots/havn-skumring-mona-iphone.png" width="100" />
-  <img src="./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png" width="100" />
-  <img src="./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png" width="100" />
+  <img src="./Mona/Mona-screenshots/havn-daggry-mona-iphone.png" width="150" />
+  <img src="./Mona/Mona-screenshots/havn-skumring-mona-iphone.png" width="150" />
+  <img src="./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png" width="150" />
+  <img src="./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png" width="150" />
 </p>
-
-![Screenshot of light mode in Mona on iPhone](./Mona/Mona-screenshots/havn-daggry-mona-iphone.png)
-![Screenshot of dark mode in Mona on iPhone](./Mona/Mona-screenshots/havn-skumring-mona-iphone.png)
-![Screenshot of light mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png)
-![Screenshot of dark mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png)
 
 ## Naming
 
@@ -79,3 +74,10 @@ The primary accents are a green and a purple, with a variation. I also set the l
 - red: #e94f2d
 - pink: #da8174
 - yellow: #eec659 (#d09e16)
+
+## More/larger screenshots:
+
+![Screenshot of light mode in Mona on iPhone](./Mona/Mona-screenshots/havn-daggry-mona-iphone.png)
+![Screenshot of dark mode in Mona on iPhone](./Mona/Mona-screenshots/havn-skumring-mona-iphone.png)
+![Screenshot of light mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png)
+![Screenshot of dark mode in Noteplan on iPhone](./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png)
