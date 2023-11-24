@@ -274,9 +274,10 @@
     },
 
     "title1": {
-      "font": "NewYork-Heavy",
+      "font": "NewYork-Semibold",
       "_font": "SFPro-Bold",
-      "__font": "PPNeueMontreal-Bold",
+      "___font": "PPNeueMontreal-Bold",
+      "__font": "PPWriter-Semibold",
       "color": "#eef0f6",
       "size": 26
     },
@@ -285,7 +286,8 @@
       "matchPosition": 1,
       "font": "NewYork-Medium",
       "_font": "SFPro-Medium",
-      "__font": "PPNeueMontreal-Medium",
+      "___font": "PPNeueMontreal-Medium",
+      "__font": "PPWriter-Medium",
       "color": "#eef0f6",
       "size": 16
     },
@@ -294,7 +296,8 @@
       "size": 20,
       "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "__font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "__font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
@@ -302,7 +305,9 @@
     "title2": {
       "font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
-      "__font": "PPNeueMontreal-Medium",
+      "___font": "PPNeueMontreal-Medium",
+      "____font": "PPNeueMontreal-Semibold",
+      "__font": "PPWriter-Semibold",
       "color": "#eaecf4",
       "size": 24
     },
@@ -311,15 +316,18 @@
       "size": 18,
       "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "__font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "__font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
 
     "title3": {
-      "font": "NewYork-Semibold",
+      "font": "NewYork-Medium",
       "_font": "SFPro-Semibold",
-      "__font": "PPNeueMontreal-Medium",
+      "___font": "PPNeueMontreal-Medium",
+      "____font": "PPNeueMontreal-Semibold",
+      "__font": "PPWriter-Medium",
       "color": "#e5e7f1",
       "size": 20
     },
@@ -328,7 +336,8 @@
       "size": 14,
       "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "__font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "__font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 6
     },
@@ -336,16 +345,18 @@
     "title4": {
       "color": "#dde0ed",
       "size": 18,
-      "font": "NewYork-Medium",
+      "font": "NewYork-Regular",
       "_font": "SFPro-Medium",
-      "__font": "PPNeueMontreal-Medium"
+      "___font": "PPNeueMontreal-Medium",
+      "__font": "PPWriter-Regular"
     },
     "title-mark4": {
       "color": "#50dde0ed",
       "size": 14,
       "font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "__font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "__font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 6
     },

@@ -272,7 +272,8 @@
     "title1": {
       "__font": "NewYork-Heavy",
       "_font": "SFPro-Bold",
-      "font": "PPNeueMontreal-Bold",
+      "___font": "PPNeueMontreal-Bold",
+      "font": "PPWriter-Semibold",
       "color": "#212840",
       "size": 26
     },
@@ -281,7 +282,8 @@
       "matchPosition": 1,
       "__font": "NewYork-Medium",
       "_font": "SFPro-Medium",
-      "font": "PPNeueMontreal-Medium",
+      "___font": "PPNeueMontreal-Medium",
+      "font": "PPWriter-Medium",
       "color": "#212840",
       "size": 16
     },
@@ -290,7 +292,8 @@
       "size": 20,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
@@ -298,8 +301,9 @@
     "title2": {
       "__font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Medium",
-      "___font": "PPNeueMontreal-Semibold",
+      "___font": "PPNeueMontreal-Medium",
+      "____font": "PPNeueMontreal-Semibold",
+      "font": "PPWriter-Semibold",
       "color": "#29304e",
       "size": 24
     },
@@ -308,7 +312,8 @@
       "size": 18,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
@@ -316,8 +321,9 @@
     "title3": {
       "__font": "NewYork-Semibold",
       "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Medium",
-      "___font": "PPNeueMontreal-Semibold",
+      "___font": "PPNeueMontreal-Medium",
+      "____font": "PPNeueMontreal-Semibold",
+      "font": "PPWriter-Medium",
       "color": "#30395c",
       "size": 20
     },
@@ -326,7 +332,8 @@
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 6
     },
@@ -336,14 +343,16 @@
       "size": 18,
       "__font": "NewYork-Medium",
       "_font": "SFPro-Medium",
-      "font": "PPNeueMontreal-Medium"
+      "___font": "PPNeueMontreal-Medium",
+      "font": "PPWriter-Regular"
     },
     "title-mark4": {
       "color": "#50363f66",
       "size": 14,
       "__font": "NewYork-Regular",
       "_font": "SFPro-Light",
-      "font": "PPNeueMontreal-Book",
+      "___font": "PPNeueMontreal-Book",
+      "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 6
     },
