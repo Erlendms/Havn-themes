@@ -18,10 +18,10 @@ A collections of themes in the _Havn_ colourway.
 Feel free to contact me if you have wishes for apps or if you want to make one!
 
 <p float="left">
-  <img src="./Mona/Mona-screenshots/havn-daggry-mona-iphone.png" width="150" />
-  <img src="./Mona/Mona-screenshots/havn-skumring-mona-iphone.png" width="150" />
-  <img src="./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png" width="150" />
-  <img src="./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png" width="150" />
+  <img src="./Mona/Mona-screenshots/havn-daggry-mona-iphone.png" width="300" />
+  <img src="./Mona/Mona-screenshots/havn-skumring-mona-iphone.png" width="300" />
+  <img src="./Noteplan/Noteplan-screenshots/havn-daggry-nm-noteplan-iphone.png" width="300" />
+  <img src="./Noteplan/Noteplan-screenshots/havn-skumring-nm-noteplan-iphone.png" width="300" />
 </p>
 
 ## Naming
