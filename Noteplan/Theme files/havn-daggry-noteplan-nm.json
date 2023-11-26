@@ -61,6 +61,7 @@
     "flagged-3",
     "todo",
     "starred",
+    "phonenumber",
     "deadline",
     "hashtag",
     "attag",
@@ -626,7 +627,7 @@
     },
     "phonenumber": {
       "COMMENT": "How do I render? Don't know if it works.",
-      "color": "#769EB3"
+      "color": "#9b73ab"
     },
 
     "NoteLinks-main": {
