@@ -224,7 +224,7 @@
       "__font": "PPNeueMontrealMono-Medium",
       "font": "PPNeueMontrealMono-Book",
       "color": "#30395c",
-      "backgroundColor": "#f2f3f8",
+      "backgroundColor": "#0F243B91",
       "size": 14,
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
@@ -247,7 +247,7 @@
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
-        "backgroundColor": "#f2f3f8"
+        "backgroundColor": "#0F243B91"
       },
       "corner-radius": 8,
       "fence-open": {
@@ -435,17 +435,12 @@
       "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
       "color": "#386a51",
-      "backgroundColor": "fcfcfd",
-      "rightBorderPadding": 6,
-      "borderRadius": 1,
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
     "checked": {
       "color": "#97a1c8",
-      "backgroundColor": "fcfcfd",
-      "borderRadius": 1,
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
@@ -490,6 +485,9 @@
     "working-on": {
       "backgroundColor": "#20468666",
       "color": "#30395c",
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
@@ -497,11 +495,11 @@
     "starred": {
       "regex": "(^|\\v)(.*[⭐⭐️💫⭐︎].*)($|\\v)",
       "matchPosition": 2,
-      "backgroundColor": "#80eec659",
+      "backgroundColor": "#4cffb908",
       "color": "30395c",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
@@ -512,9 +510,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#30e9745a",
       "color": "#30395c",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -524,9 +522,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#40e96143",
       "color": "#29304e",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -536,9 +534,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#50e94f2d",
       "color": "#212840",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -564,10 +562,10 @@
       "color": "#fcfcfd",
       "_font": "SFPro-Light",
       "font": "PPNeueMontreal-Light",
-      "backgroundColor": "#468666",
+      "backgroundColor": "#cc468666",
       "leftBorderPadding": 6,
       "rightBorderPadding": 6,
-      "borderRadius": 6,
+      "borderRadius": 3,
       "horizontalMargin": 7
     },
 

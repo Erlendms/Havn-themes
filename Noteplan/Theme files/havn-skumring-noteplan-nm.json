@@ -224,7 +224,7 @@
       "__font": "PPNeueMontrealMono-Medium",
       "font": "PPNeueMontrealMono-Book",
       "color": "#e5e7f1",
-      "backgroundColor": "#121521",
+      "backgroundColor": "#5E050505",
       "size": 14,
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
@@ -247,7 +247,7 @@
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
-        "backgroundColor": "#121521"
+        "backgroundColor": "#5E050505"
       },
       "corner-radius": 8,
       "fence-open": {
@@ -435,18 +435,12 @@
       "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
       "color": "#40786f",
-      "backgroundColor": "1a1e30",
-      "rightBorderPadding": 0,
-      "leftBorderPadding": 0,
-      "borderRadius": 0.1,
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
     "checked": {
       "color": "#52629e",
-      "backgroundColor": "1a1e30",
-      "borderRadius": 1,
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
@@ -480,7 +474,7 @@
 
     "done-date": {
       "color": "#52629e",
-      "backgroundColor": "#090b11",
+      "backgroundColor": "#5E050505",
       "leftBorderPadding": 5,
       "rightBorderPadding": 5,
       "borderRadius": 6,
@@ -491,6 +485,9 @@
     "working-on": {
       "backgroundColor": "#5040786f",
       "color": "#e5e7f1",
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
     },
@@ -498,11 +495,11 @@
     "starred": {
       "regex": "(^|\\v)(.*[⭐⭐️💫⭐︎].*)($|\\v)",
       "matchPosition": 2,
-      "backgroundColor": "#bb74580c",
+      "backgroundColor": "#40FDB500",
       "color": "e5e7f1",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
@@ -513,9 +510,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#30e9745a",
       "color": "#e5e7f1",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -525,9 +522,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#40e96143",
       "color": "#eaecf4",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -537,9 +534,9 @@
       "__matchPosition": 2,
       "backgroundColor": "#50e94f2d",
       "color": "#eef0f6",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
+      "leftBorderPadding": -19,
+      "rightBorderPadding": 6,
+      "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
       "paragraphSpacing": 3
@@ -565,7 +562,7 @@
       "color": "#1a1e30",
       "_font": "SFPro-Light",
       "font": "PPNeueMontreal-Light",
-      "backgroundColor": "#40786f",
+      "backgroundColor": "#aa7ab8ae",
       "leftBorderPadding": 6,
       "rightBorderPadding": 6,
       "borderRadius": 6,
