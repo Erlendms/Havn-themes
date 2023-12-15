@@ -42,7 +42,6 @@
     "checked-todo-characters",
     "checked-scheduled",
     "quote-mark",
-    "tabbed",
     "NoteLinks-main",
     "link",
     "Timeblock-Hide-Tag",
@@ -69,7 +68,8 @@
     "checked",
     "checked-canceled",
     "checked-canceled-text",
-    "done-date"
+    "done-date",
+    "tabbed"
   ],
   "styles": {
     "body": {
