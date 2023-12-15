@@ -47,6 +47,10 @@
     "Timeblock-Hide-Tag",
     "schedule-to-date-link",
     "schedule-from-date-link",
+    "definition-content",
+    "definition-heading",
+    "definition-right-delimiter",
+    "definition-left-delimiter",
     "title1",
     "title2",
     "title3",
@@ -59,6 +63,7 @@
     "flagged-2",
     "flagged-3",
     "starred",
+    "starred-list",
     "todo",
     "phonenumber",
     "deadline",
@@ -492,12 +497,22 @@
     },
 
     "starred": {
-      "regex": "(^|\\v)(.*[⭐⭐️💫⭐︎].*)($|\\v)",
-      "matchPosition": 2,
+      "regex": "^(?!\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
+      "backgroundColor": "#4cffb908",
+      "color": "30395c",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 3,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4
+    },
+    "starred-list": {
+      "regex": "^(\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
       "backgroundColor": "#4cffb908",
       "color": "30395c",
       "leftBorderPadding": -19,
-      "rightBorderPadding": 6,
+      "rightBorderPadding": 3,
       "borderRadius": 3,
       "horizontalMargin": 2,
       "lineSpacing": 0.9,
@@ -760,6 +775,39 @@
       "_color": "#F04060",
       "_backgroundColor": "#f0f0f0",
       "_borderRadius": 4
+    },
+    "definition-heading": {
+      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#1C3E87",
+      "font": "PPWriter-Medium",
+      "isRevealOnCursorRange": true
+    },
+
+    "definition-left-delimiter": {
+      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#771C3E87",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+
+    "definition-right-delimiter": {
+      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#771C3E87",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "definition-content": {
+      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+      "backgroundColor": "#22003ba8",
+      "color": "#363f66",
+      "leftBorderPadding": 9,
+      "rightBorderPadding": 9,
+      "borderRadius": "9"
     }
   }
 }
