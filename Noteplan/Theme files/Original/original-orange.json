@@ -1,0 +1,244 @@
+{
+	"name": "Orange",
+	"style": "Light",
+	"author": {
+		"name": "NotePlan",
+		"email": "hello@noteplan.co"
+	},
+	
+	"editor": {
+		"backgroundColor": "#ffffff",
+		"altBackgroundColor": "#FAFFFF",
+		"tintColor": "#d87001",
+		"tintColor2": "#0091f8",
+		"textColor":"#333333",
+		"toolbarBackgroundColor": "#F2F3F5",
+		"toolbarIconColor": "#444444",
+		"menuItemColor": "#444444",
+		"timeBlockColor": "#d87001",
+		"shouldOverwriteFont": true
+	},
+	
+	"styles": {
+		
+		"body": {
+			"font": "AvenirNext-Regular",
+			"size": 16,
+			"color": "#333333",
+		},
+		
+		"title1": {
+			"color": "#000000",
+			"size": 28
+		},
+		
+		"title2": {
+			"color": "#000000",
+			"size": 24
+		},
+		
+		"title3": {
+			"color": "#000000",
+			"size": 20
+		},
+		
+		"working-on": {
+			"backgroundColor": "#306600FF",
+			"color": "#17003B"
+		},
+
+		"flagged-1": {
+			"backgroundColor": "#22D04023",
+			"color": "#59000B"
+		},
+
+		"flagged-2": {
+			"backgroundColor": "#40E3021D",
+			"color": "#420008"
+		},
+
+		"flagged-3": {
+			"backgroundColor": "#6FFF0202",
+			"color": "#1F0004"
+		},
+		
+		"title-mark1": {
+			"color": "#40000000",
+			"size": 28,
+		},
+		
+		"title-mark2": {
+		   "color": "#40000000",
+		   "size": 24,
+		},
+		
+		"title-mark3": {
+		   "color": "#40000000",
+		   "size": 20,
+		},
+		
+		"title4": {
+			"color": "#000000",
+			"size": 16,
+			"underlineStyle": 1
+		},
+		
+		"title-mark4": {
+		   "color": "#40000000",
+		   "size": 18,
+		   "font": "AvenirNext-DemiBold"
+		},
+		
+		"bold": {
+			"type": "bold"
+		},
+		
+		"bold-left-mark": {
+			"color": "#40000000"
+		},
+		
+		"bold-right-mark": {
+			"color": "#40000000"
+		},
+		
+		"italic": {
+			"type": "italic"
+		},
+		
+		"italic-left-mark": {
+			"color": "#40000000"
+		},
+		
+		"italic-right-mark": {
+			"color": "#40000000"
+		},
+		
+		"boldItalic": {
+			"type": "bolditalic"
+		},
+		
+		"boldItalic-left-mark": {
+			"color": "#40000000"
+		},
+		
+		"boldItalic-right-mark": {
+			"color": "#40000000"
+		},
+		
+		"code": {
+			"font": "Menlo-Regular",
+			"color": "#0091f8",
+			"size": 15
+		},
+	
+		"code-left-backtick": {
+			"color": "#660091f8"
+		},
+		
+		"code-right-backtick": {
+			"color": "#660091f8"
+		},
+		
+		"checked": {
+			"color": "#66333333",
+			"headIndent": 33
+		},
+		
+		"todo": {
+			"color": "#d87001",
+			"headIndent": 33,
+			"size": 16
+		},
+		
+		"checked-todo-characters": {
+			"headIndent": 33,
+			"size": 16
+		},
+		
+		"tabbed": {
+			"headIndent": 43
+		},
+		
+		"quote-mark": {
+			"color": "#800091f8",
+			"headIndent": 33,
+			"size": 16
+		},
+		
+		"quote-content": {
+			"color": "#CC333333",
+			"type": "italic",
+			"headIndent": 33
+		},
+		
+		"link": {
+		   
+		},
+						
+		"schedule-to-date-link": {
+		  
+		},
+		
+		"done-date": {
+			
+		},
+		
+		"schedule-from-date-link": {
+		
+		},
+
+		"note-title-link": {
+		
+		},
+		
+		"hashtag": {
+		   "backgroundColor": "#20d87001"
+		},
+		
+		"attag": {
+			"backgroundColor": "#20d87001"
+		},
+		
+		"phonenumber": {
+	   
+		},
+		
+		"highlighted": {
+			"backgroundColor": "#6684FF00",
+		},
+
+		"highlighted-left-marker": {
+			"color": "#40000000",
+		},
+
+		"highlighted-right-marker": {
+			"color": "#40000000",
+		},
+
+		"strikethrough": {
+			"color": "#99333333",
+			"strikethroughColor": "#DD333333"
+		},
+
+		"strikethrough-left-tilde": {
+			"color": "#44333333"
+		},
+
+		"strikethrough-right-tilde": {
+			"color": "#44333333"
+		},
+		
+		"underline": {
+			"underlineStyle": 2,
+			"underlineColor": "#FFCC66"
+		},
+
+		"underline-left-tilde": {
+			"color": "#44333333"
+		},
+
+		"underline-right-tilde": {
+			"color": "#44333333"
+		}
+	}
+}
