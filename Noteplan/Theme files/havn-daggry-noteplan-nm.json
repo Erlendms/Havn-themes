@@ -47,10 +47,6 @@
     "Timeblock-Hide-Tag",
     "schedule-to-date-link",
     "schedule-from-date-link",
-    "definition-content",
-    "definition-heading",
-    "definition-right-delimiter",
-    "definition-left-delimiter",
     "title1",
     "title2",
     "title3",
@@ -64,6 +60,41 @@
     "flagged-3",
     "starred",
     "starred-list",
+    "interesting-border",
+    "interesting-content",
+    "interesting-heading",
+    "interesting-right-delimiter",
+    "interesting-left-delimiter",
+    "disagree-border",
+    "disagree-content",
+    "disagree-heading",
+    "disagree-right-delimiter",
+    "disagree-left-delimiter",
+    "reading-border",
+    "reading-content",
+    "reading-heading",
+    "reading-right-delimiter",
+    "reading-left-delimiter",
+    "definition-border",
+    "definition-content",
+    "definition-heading",
+    "definition-right-delimiter",
+    "definition-left-delimiter",
+    "key-border",
+    "key-content",
+    "key-heading",
+    "key-right-delimiter",
+    "key-left-delimiter",
+    "critique-border",
+    "critique-content",
+    "critique-heading",
+    "critique-right-delimiter",
+    "critique-left-delimiter",
+    "example-border",
+    "example-content",
+    "example-heading",
+    "example-right-delimiter",
+    "example-left-delimiter",
     "todo",
     "phonenumber",
     "deadline",
@@ -182,6 +213,7 @@
       "horizontalMargin": 6,
       "order": 35,
       "__matchPosition": 2,
+      "inlineBorder": false,
       "isRevealOnCursorRange": true
     },
     "highlighted-left-marker": {
@@ -232,6 +264,7 @@
       "size": 14,
       "leftBorderPadding": 3,
       "rightBorderPadding": 3,
+      "inlineBorder": false,
       "borderRadius": 6,
       "horizontalMargin": 2
     },
@@ -776,38 +809,342 @@
       "_backgroundColor": "#f0f0f0",
       "_borderRadius": 4
     },
-    "definition-heading": {
-      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+
+    "interesting-heading": {
+      "regex": "(\\>\\[!)(💡 Interesting: )(\\])(.*)",
       "matchPosition": 2,
-      "color": "#1C3E87",
+      "color": "#7a5800",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "interesting-left-delimiter": {
+      "regex": "(\\>\\[!)(💡 Interesting: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#777a5800",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "interesting-right-delimiter": {
+      "regex": "(\\>\\[!)(💡 Interesting: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#777a5800",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "interesting-border": {
+      "regex": "(^|\\v)(.*💡 Interesting:.*)($|\\v)",
+      "backgroundColor": "#11ffb908",
+      "color": "#7a5800",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "interesting-content": {
+      "regex": "(^|\\v)(.*💡 Interesting:.*)($|\\v)",
+      "backgroundColor": "#11ffb908",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+
+    "disagree-heading": {
+      "regex": "(\\>\\[!)(🚫 Disagree: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#cc3333",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "disagree-left-delimiter": {
+      "regex": "(\\>\\[!)(🚫 Disagree: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#77cc3333",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "disagree-right-delimiter": {
+      "regex": "(\\>\\[!)(🚫 Disagree: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#77cc3333",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "disagree-border": {
+      "regex": "(^|\\v)(.*🚫 Disagree:.*)($|\\v)",
+      "backgroundColor": "#11cc3333",
+      "color": "#cc3333",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "disagree-content": {
+      "regex": "(^|\\v)(.*🚫 Disagree:.*)($|\\v)",
+      "backgroundColor": "#11cc3333",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+
+    "reading-heading": {
+      "regex": "(\\>\\[!)(📚 Further reading: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#005505",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "reading-left-delimiter": {
+      "regex": "(\\>\\[!)(📚 Further reading: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#77005505",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "reading-right-delimiter": {
+      "regex": "(\\>\\[!)(📚 Further reading: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#77005505",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "reading-border": {
+      "regex": "(^|\\v)(.*📚 Further reading:.*)($|\\v)",
+      "backgroundColor": "#11005505",
+      "color": "#005505",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "reading-content": {
+      "regex": "(^|\\v)(.*📚 Further reading:.*)($|\\v)",
+      "backgroundColor": "#11005505",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+
+    "definition-heading": {
+      "regex": "(\\>\\[!)(👓 Definition: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#6631b5",
       "font": "PPWriter-Medium",
       "isRevealOnCursorRange": true
     },
-
     "definition-left-delimiter": {
-      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+      "regex": "(\\>\\[!)(👓 Definition: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#776631b5",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "definition-right-delimiter": {
+      "regex": "(\\>\\[!)(👓 Definition: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#776631b5",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "definition-border": {
+      "regex": "(^|\\v)(.*👓 Definition:.*)($|\\v)",
+      "backgroundColor": "#116631b5",
+      "color": "#6631b5",
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "definition-content": {
+      "regex": "(^|\\v)(.*👓 Definition:.*)($|\\v)",
+      "backgroundColor": "#116631b5",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+
+    "key-heading": {
+      "regex": "(\\>\\[!)(💎 Key conclusion: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#1C3E87",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "key-left-delimiter": {
+      "regex": "(\\>\\[!)(💎 Key conclusion: )(\\])(.*)",
       "matchPosition": 1,
       "color": "#771C3E87",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
-
-    "definition-right-delimiter": {
-      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
+    "key-right-delimiter": {
+      "regex": "(\\>\\[!)(💎 Key conclusion: )(\\])(.*)",
       "matchPosition": 3,
       "color": "#771C3E87",
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "isRevealOnCursorRange": true
     },
-    "definition-content": {
-      "regex": "(\\>\\[!)(👓 Definition:  )(\\])(.*)",
-      "backgroundColor": "#22003ba8",
-      "color": "#363f66",
-      "leftBorderPadding": 9,
-      "rightBorderPadding": 9,
-      "borderRadius": "9"
+    "key-border": {
+      "regex": "(^|\\v)(.*💎 Key conclusion:.*)($|\\v)",
+      "backgroundColor": "#11003ba8",
+      "color": "#1C3E87",
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "key-content": {
+      "regex": "(^|\\v)(.*💎 Key conclusion:.*)($|\\v)",
+      "backgroundColor": "#11003ba8",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+    "critique-heading": {
+      "regex": "(\\>\\[!)(🗣️ Author critique: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#9d0a80",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "critique-left-delimiter": {
+      "regex": "(\\>\\[!)(🗣️ Author critique: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#779d0a80",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "critique-right-delimiter": {
+      "regex": "(\\>\\[!)(🗣️ Author critique: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#779d0a80",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "critique-border": {
+      "regex": "(^|\\v)(.*🗣️ Author critique:.*)($|\\v)",
+      "backgroundColor": "#11003ba8",
+      "color": "#9d0a80",
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "critique-content": {
+      "regex": "(^|\\v)(.*🗣️ Author critique:.*)($|\\v)",
+      "backgroundColor": "#11ce26d9",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
+    },
+    "example-heading": {
+      "regex": "(\\>\\[!)(🔍 Example: )(\\])(.*)",
+      "matchPosition": 2,
+      "color": "#b25a14",
+      "font": "PPWriter-Semibold",
+      "isRevealOnCursorRange": true
+    },
+    "example-left-delimiter": {
+      "regex": "(\\>\\[!)(🔍 Example: )(\\])(.*)",
+      "matchPosition": 1,
+      "color": "#77b25a14",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "example-right-delimiter": {
+      "regex": "(\\>\\[!)(🔍 Example: )(\\])(.*)",
+      "matchPosition": 3,
+      "color": "#77b25a14",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "example-border": {
+      "regex": "(^|\\v)(.*🔍 Example:.*)($|\\v)",
+      "backgroundColor": "#11f25e0d",
+      "color": "#b25a14",
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "leadingBorder": true,
+      "isFullWidthBorder": true
+    },
+    "example-content": {
+      "regex": "(^|\\v)(.*🔍 Example:.*)($|\\v)",
+      "backgroundColor": "#11f25e0d",
+      "color": "#30395c",
+      "firstLineHeadIndent": 33,
+      "headIndent": 33,
+      "leftBorderPadding": 3,
+      "rightBorderPadding": 3,
+      "borderRadius": 6,
+      "horizontalMargin": 2,
+      "lineSpacing": 0.9,
+      "paragraphSpacing": 4,
+      "isFullWidthBorder": true
     }
   }
 }
