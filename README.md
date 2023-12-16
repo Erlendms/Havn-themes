@@ -15,7 +15,7 @@ A collections of themes in the _Havn_ colourway.
 - iTerm 2
 - Code editors...
 
-Feel free to [contact](mailto:post@havn.online) me if you have wishes for apps or if you want to make one!
+Feel free to [contact me](mailto:post@havn.online) if you have wishes for apps or if you want to make one!
 
 <div align="center">
   <img src="./Mona/Mona-screenshots/havn-daggry-mona-iphone.png" width="250" />
