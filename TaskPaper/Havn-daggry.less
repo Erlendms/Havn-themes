@@ -1,0 +1,193 @@
+// UI Scale
+@base-font-size: 16;
+@user-font-size: $USER_FONT_SIZE;
+@ui-scale: @user-font-size / @base-font-size;
+
+// Variables
+@background-color: #fcfcfd;
+@border-color: #f2f3f8;
+@text-color: #3e4a77;
+@h1-color: #212840;
+@h2-color: #29304e;
+@h3-color: #30395c;
+
+@tint-color: #386a51;
+@link-color: #468666;
+@tag-color: #a986b6;
+@error-color: #e94f2d;
+@mid-blue: #97a1c8;
+@mid-blue2: #5a6796;
+@selection-color: mix(@text-color, @background-color, 20%);
+@invisibles-color: mix(@text-color, @background-color, 50%);
+
+@sans-font-family: PP Neue Montreal, Helvetica Neue;
+@serif-font-family: PP Writer, Lora, Georgia;
+@line-height-multiple: 1.1;
+
+window {
+  appearance: NSAppearanceNameVibrantLight;
+}
+
+searchbar {
+  appearance: NSAppearanceNameVibrantLight;
+  color: @tag-color;
+  secondary-text-color: @text-color;
+  error-text-color: @error-color;
+  placeholder-color: @mid-blue;
+  background-color: @border-color;
+}
+
+editor {
+  color: @text-color;
+  font-size: @user-font-size;
+  font-family: @sans-font-family;
+  background-color: @background-color;
+  line-height-multiple: @line-height-multiple;
+  editor-wrap-to-column: 100;
+  item-wrap-to-column: 66;
+
+  item-indent: 20px * @ui-scale;
+  caret-width: 2px;
+  caret-color: @tint-color;
+  invisibles-color: @invisibles-color;
+  selection-background-color: @selection-color;
+  guide-line-color: mix(@text-color, @background-color, 10%);
+  guide-line-width: 2.5px;
+  message-color: mix(@text-color, @background-color, 50%);
+  typewriter-scroll-percent: 40%;
+}
+
+sidebar {
+  search-item-prefix: ":: ";
+}
+
+item {
+  handle-color: none;
+  handle-border-color: @tint-color;
+  handle-size: 6;
+}
+
+item[data-type="note"] {
+  font-family: @serif-font-family;
+  font-style: normal;
+  handle-color: none;
+  handle-border-color: @tint-color;
+}
+
+item[collapsed] {
+  handle-color: @tint-color;
+  handle-size: 8;
+  color: @h1-color;
+}
+
+item[expanded] {
+  handle-color: none;
+  handle-border-color: @tint-color;
+}
+item[data-type="note"].item[expanded],
+item[data-type="note"].item[collapsed] {
+  font-weight: bold;
+  paragraph-spacing-before: 5;
+}
+
+item[mouseOverHandle] {
+  color: @h2-color;
+}
+
+item[leaf] {
+  handle-color: none;
+  handle-border-color: none;
+  color: @text-color;
+}
+
+item[empty] {
+  handle-color: none;
+  handle-border-color: none;
+}
+
+item[data-type="task"] {
+  font-style: regular;
+  font-weight: bold;
+}
+
+item[data-type="task"].item[leaf] {
+  font-size: @user-font-size*0.95;
+  color: @mid-blue2;
+}
+
+// General projects
+item[data-type="project"] {
+  font-size: @user-font-size*1.2;
+  font-weight: regular;
+  color: @h3-color;
+  paragraph-spacing-before: 5;
+}
+// H1 projects
+item[depth="1"].item[data-type="project"] {
+  font-size: @user-font-size*2;
+  color: @h1-color;
+  paragraph-spacing-before: 40;
+  paragraph-spacing-after: 2;
+}
+// H2 projects
+item[depth="2"].item[data-type="project"] {
+  font-size: @user-font-size*1.5;
+  color: @h2-color;
+  paragraph-spacing-before: 10;
+}
+
+item[data-type="project"].item[leaf] {
+  color: @mid-blue;
+}
+
+item[data-done],
+item[data-done].item[leaf] {
+  color: @mid-blue;
+  text-strikethrough-color: mix(@text-color, @background-color, 50%);
+  font-weight: normal;
+}
+
+item[data-done].item[collapsed] {
+  handle-color: @mid-blue;
+  handle-size: 7;
+}
+item[data-done].item[expanded] {
+  handle-border-color: @mid-blue;
+}
+
+.item[data-type="project"].item[focused],
+.item[data-type="task"].item[focused],
+.item[data-type="note"].item[focused] {
+  color: @tint-color;
+}
+
+run[link] {
+  cursor: pointer;
+  color: @tint-color;
+  font-weight: regular;
+}
+
+run[link^="button"] {
+  color: @tint-color;
+}
+
+run[link^="filter"] {
+  color: @text-color;
+}
+
+run[tag] {
+  font-size: @user-font-size;
+  font-style: normal;
+  font-weight: normal;
+  color: @tag-color;
+}
+
+item[data-done] {
+  > run[tag] {
+    color: @mid-blue;
+    background-color: none;
+  }
+  > run[link] {
+    color: @mid-blue;
+  }
+}
