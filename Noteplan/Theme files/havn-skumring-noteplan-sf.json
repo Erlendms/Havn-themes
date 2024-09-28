@@ -513,7 +513,7 @@
     },
 
     "starred": {
-      "regex": "^(?!\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
+      "regex": "^(?!\\* |\\+ |- |\\d+\\. ).*(⭐|⭐️|💫|⭐︎)+.*",
       "backgroundColor": "#40fdb500",
       "color": "e5e7f1",
       "leftBorderPadding": 3,
@@ -524,7 +524,7 @@
       "paragraphSpacing": 4
     },
     "starred-list": {
-      "regex": "^(\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
+      "regex": "^(\\* |\\+ |- |\\d+\\. ).*(⭐|⭐️|💫|⭐︎)+.*",
       "backgroundColor": "#40fdb500",
       "color": "e5e7f1",
       "leftBorderPadding": -19,

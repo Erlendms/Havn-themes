@@ -26,6 +26,9 @@
     "title-mark3",
     "body",
     "quote-content",
+    "parentheses",
+    "parentheses-left",
+    "parentheses-right",
     "bold",
     "bold-left-mark",
     "bold-right-mark",
@@ -109,7 +112,6 @@
   ],
   "styles": {
     "body": {
-      "_font": "SFPro-Regular",
       "font": "PPNeueMontreal-Regular",
       "size": 16,
       "color": "#d7dbea",
@@ -119,49 +121,58 @@
     },
 
     "tabbed": {
-      "COMMENT": "for anything indented",
       "headIndent": 43
     },
 
     "bold": {
-      "_font": "SFPro-Semibold",
-      "font": "PPNeueMontreal-Bold",
-      "__font": "PPNeueMontreal-Semibold"
+      "color": "#c6cce1",
+      "font": "PPNeueMontreal-Bold"
     },
     "bold-left-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 10,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
     "bold-right-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 10,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "italic": {
-      "_font": "SFPro-RegularItalic",
+      "color": "#c6cce1",
       "font": "PPNeueMontreal-Italic"
     },
     "italic-left-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
     "italic-right-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "boldItalic": {
-      "_font": "SFPro-SemiboldItalic",
-      "font": "PPNeueMontreal-BoldItalic",
-      "__font": "PPNeueMontreal-SemiboldItalic"
+      "color": "#d0d5e6",
+      "font": "PPNeueMontreal-BoldItalic"
     },
     "boldItalic-left-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 8,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
     "boldItalic-right-mark": {
-      "color": "#40d7dbea",
-      "size": 12
+      "color": "#97a1c8",
+      "size": 8,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "underline": {
@@ -169,70 +180,77 @@
       "underlineColor": "#40786f"
     },
     "underline-left-tilde": {
-      "color": "#40786f",
-      "size": 12
+      "color": "#9940786f",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
     "underline-right-tilde": {
-      "color": "#40786f",
-      "size": 12
+      "color": "#9940786f",
+      "size": 12,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
+    },
+
+    "parentheses": {
+      "regex": "(?:^|\\s)(\\()([^)]+?)(\\))",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "color": "#c6cce1"
+    },
+    "parentheses-left": {
+      "regex": "(?:^|\\s)(\\()([^)]+?)(\\))",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": false,
+      "color": "#dde0ed"
+    },
+    "parentheses-right": {
+      "regex": "(?:^|\\s)(\\()([^)]+?)(\\))",
+      "matchPosition": 3,
+      "color": "#dde0ed",
+      "isHiddenWithoutCursor": false
     },
 
     "strikethrough": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 2,
       "strikethroughStyle": 2,
       "isRevealOnCursorRange": true,
       "color": "#97a1c8",
       "strikethroughColor": "#aad7dbea"
     },
     "strikethrough-left-tilde": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 1,
       "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
+      "isHiddenWithoutCursor": false,
       "color": "#97a1c8",
-      "size": 12,
-      "isRevealOnCursorRange": true
+      "size": 12
     },
     "strikethrough-right-tilde": {
-      "__regex": "(~~)([^~]+)(~~)",
-      "__matchPosition": 3,
       "isMarkdownCharacter": true,
       "color": "#97a1c8",
       "size": 12,
-      "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true
+      "isHiddenWithoutCursor": false
     },
 
     "highlighted": {
-      "__regex": "(==)([^\\s].+?)(==)",
       "backgroundColor": "#40da8174",
       "color": "#e5e7f1",
-      "leftBorderPadding": 6,
-      "rightBorderPadding": 6,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
       "borderRadius": 6,
       "horizontalMargin": 6,
       "order": 35,
-      "__matchPosition": 2,
       "isRevealOnCursorRange": true
     },
     "highlighted-left-marker": {
-      "__regex": "(==)([^\\s].+?)(==)",
-      "color": "#99da8174",
-      "size": 12,
+      "color": "#66da8174",
+      "size": 10,
       "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true,
-      "__matchPosition": 1
+      "isHiddenWithoutCursor": false
     },
     "highlighted-right-marker": {
-      "__regex": "(==)([^\\s].+?)(==)",
-      "color": "#99da8174",
-      "size": 12,
+      "color": "#66da8174",
+      "size": 10,
       "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "isRevealOnCursorRange": true,
-      "__matchPosition": 3
+      "isHiddenWithoutCursor": false
     },
 
     "inline-comment": {
@@ -256,30 +274,30 @@
     },
 
     "code": {
-      "_font": "SFMono-Regular",
-      "__font": "PPNeueMontrealMono-Medium",
       "font": "PPNeueMontrealMono-Book",
       "color": "#e5e7f1",
       "backgroundColor": "#5E050505",
       "size": 14,
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
+      "leftBorderPadding": 8,
+      "rightBorderPadding": 6,
       "borderRadius": 6,
       "horizontalMargin": 2
     },
     "code-left-backtick": {
-      "color": "#97a1c8"
+      "color": "#97a1c8",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
     "code-right-backtick": {
-      "color": "#97a1c8"
+      "color": "#97a1c8",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "code-fence": {
       "theme": "atelier-plateau-dark",
       "body": {
-        "_font": "SFMono-Regular",
         "font": "PPNeueMontrealMono-Medium",
-        "__font": "PPNeueMontrealMono-Book",
         "paragraphSpacingBefore": 0,
         "paragraphSpacing": 0,
         "size": 14,
@@ -287,13 +305,16 @@
       },
       "corner-radius": 8,
       "fence-open": {
-        "color": "#97a1c8"
+        "color": "#97a1c8",
+        "isMarkdownCharacter": true,
+        "isHiddenWithoutCursor": false
       },
       "fence-close": {
-        "color": "#97a1c8"
+        "color": "#97a1c8",
+        "isMarkdownCharacter": true,
+        "isHiddenWithoutCursor": false
       },
       "language-specifier": {
-        "_font": "SFMono-RegularItalic",
         "font": "PPNeueMontrealMono-RegularItalic",
         "color": "#97a1c8",
         "size": 14,
@@ -316,9 +337,6 @@
     },
 
     "title1": {
-      "__font": "NewYork-Heavy",
-      "_font": "SFPro-Bold",
-      "___font": "PPNeueMontreal-Bold",
       "font": "PPWriter-Semibold",
       "color": "#eef0f6",
       "size": 26
@@ -326,81 +344,63 @@
     "title-in-frontmatter": {
       "regex": "^[tT]itle:\\s+(.*)",
       "matchPosition": 1,
-      "__font": "NewYork-Medium",
-      "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
       "font": "PPWriter-Medium",
       "color": "#eef0f6",
       "size": 16
     },
     "title-mark1": {
-      "color": "#50eef0f6",
-      "size": 20,
-      "__font": "NewYork-Regular",
-      "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
+      "color": "#97a1c8",
+      "size": 16,
       "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 9
+      "paragraphSpacing": 9,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "title2": {
-      "__font": "NewYork-Semibold",
-      "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
       "font": "PPWriter-Semibold",
       "color": "#eaecf4",
       "size": 24
     },
     "title-mark2": {
-      "color": "#50eaecf4",
-      "size": 18,
-      "__font": "NewYork-Regular",
-      "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
+      "color": "#97a1c8",
+      "size": 14,
       "font": "PPWriter-ThinText",
-      "paragraphSpacingBefore": 16,
-      "paragraphSpacing": 6
+      "paragraphSpacingBefore": 12,
+      "paragraphSpacing": 6,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "title3": {
-      "__font": "NewYork-Semibold",
-      "_font": "SFPro-Semibold",
-      "___font": "PPNeueMontreal-Medium",
-      "____font": "PPNeueMontreal-Semibold",
       "font": "PPWriter-Medium",
       "color": "#e5e7f1",
       "size": 20
     },
     "title-mark3": {
-      "color": "#50e5e7f1",
-      "size": 16,
-      "__font": "NewYork-Regular",
-      "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
+      "color": "#97a1c8",
+      "size": 12,
       "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 6
+      "paragraphSpacing": 6,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "title4": {
       "color": "#dde0ed",
       "size": 18,
-      "__font": "NewYork-Medium",
-      "_font": "SFPro-Medium",
-      "___font": "PPNeueMontreal-Medium",
       "font": "PPWriter-Regular"
     },
     "title-mark4": {
-      "color": "#50dde0ed",
-      "size": 14,
-      "__font": "NewYork-Regular",
-      "_font": "SFPro-Light",
-      "___font": "PPNeueMontreal-Book",
+      "color": "#97a1c8",
+      "size": 10,
       "font": "PPWriter-ThinText",
       "paragraphSpacingBefore": 12,
-      "paragraphSpacing": 6
+      "paragraphSpacing": 6,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": false
     },
 
     "attribute": {
@@ -421,7 +421,6 @@
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 1,
       "color": "#809f79af",
-      "_font": "SFMono-Regular",
       "font": "PPNeueMontrealMono-Medium",
       "size": 14
     },
@@ -429,7 +428,6 @@
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 2,
       "color": "#9f79af",
-      "_font": "SFMono-Regular",
       "font": "PPNeueMontrealMono-Medium",
       "size": 14
     },
@@ -437,7 +435,6 @@
       "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
       "matchPosition": 3,
       "color": "#809f79af",
-      "_font": "SFMono-Regular",
       "font": "PPNeueMontrealMono-Medium",
       "size": 14
     },
@@ -445,7 +442,6 @@
       "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
       "matchPosition": 1,
       "color": "#779f79af",
-      "_font": "SFMono-Regular",
       "font": "PPNeueMontrealMono-Medium",
       "size": 14
     },
@@ -529,7 +525,7 @@
     },
 
     "starred": {
-      "regex": "^(?!\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
+      "regex": "^(?!\\* |\\+ |- |\\d+\\. ).*(⭐|⭐️|💫|⭐︎)+.*",
       "backgroundColor": "#40fdb500",
       "color": "e5e7f1",
       "leftBorderPadding": 3,
@@ -540,7 +536,7 @@
       "paragraphSpacing": 4
     },
     "starred-list": {
-      "regex": "^(\\* |\\+ |- |\\d+\\. ).*([⭐⭐️💫⭐︎]).*",
+      "regex": "^(\\* |\\+ |- |\\d+\\. ).*(⭐|⭐️|💫|⭐︎)+.*",
       "backgroundColor": "#40fdb500",
       "color": "e5e7f1",
       "leftBorderPadding": -19,
@@ -552,8 +548,6 @@
     },
 
     "flagged-1": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{1}\\h.*)|(.*\\h+\\!{1}\\h.*)|(.*\\h\\!{1}))$",
-      "__matchPosition": 2,
       "backgroundColor": "#30e9745a",
       "color": "#e5e7f1",
       "leftBorderPadding": -19,
@@ -564,8 +558,6 @@
       "paragraphSpacing": 3
     },
     "flagged-2": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{2}\\h.*)|(.*\\h+\\!{2}\\h.*)|(.*\\h\\!{2}))$",
-      "__matchPosition": 2,
       "backgroundColor": "#40e96143",
       "color": "#eaecf4",
       "leftBorderPadding": -19,
@@ -576,8 +568,6 @@
       "paragraphSpacing": 3
     },
     "flagged-3": {
-      "__regex": "^\\h*[\\*\\-\\+](\\h+(?!\\[[x-]\\])|\\[ ]\\h+|\\[>]\\h+)((\\!{3}\\h.*)|(.*\\h+\\!{3}\\h.*)|(.*\\h\\!{3}))$",
-      "__matchPosition": 2,
       "backgroundColor": "#50e94f2d",
       "color": "#eef0f6",
       "leftBorderPadding": -19,
@@ -597,16 +587,13 @@
     "deadline": {
       "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
       "matchPosition": 1,
-      "_font": "SFPro-Semibold",
       "font": "PPNeueMontreal-Medium",
-      "__font": "PPNeueMontreal-Semibold",
       "color": "#ed7054"
     },
 
     "unfinished": {
       "regex": "\\?\\?\\?",
       "color": "#1a1e30",
-      "_font": "SFPro-Light",
       "font": "PPNeueMontreal-Light",
       "backgroundColor": "#aa7ab8ae",
       "leftBorderPadding": 6,
@@ -636,8 +623,6 @@
 
     "special-char": {
       "COMMENT": "Is this needed?",
-      "__font": "SFMono-Semibold",
-      "_font": "PPNeueMontreal-Medium",
       "font": "PPNeueMontrealMono-Bold"
     },
 
@@ -677,39 +662,15 @@
     "NoteLinks-main": {
       "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
       "matchPosition": 2,
-      "color": "#386a51"
+      "color": "#b699c2"
     },
-    "NoteLinks-left-brackets": {
-      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
-      "matchPosition": 1,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
+    "note-title-link-left-bracket": {
+      "color": "#97a1c8",
+      "isHiddenWithoutCursor": false
     },
-    "NoteLinks-right-brackets": {
-      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
-      "matchPosition": 3,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "NoteLinks-main-done": {
-      "COMMENT": "Turned off",
-      "_regex": "(?:^|\\h)(x\\[\\[)(.*?)(\\]\\])",
-      "_matchPosition": 1,
-      "_isMarkdownCharacter": true,
-      "_isRevealOnCursorRange": true,
-      "_font": "noteplanstate",
-      "_color": "#97B853"
-    },
-    "NoteLinks-main-cancelled": {
-      "COMMENT": "Turned off",
-      "_regex": "(?:^|\\h)(-\\[\\[)(.*?)(\\]\\])",
-      "_matchPosition": 1,
-      "_isMarkdownCharacter": true,
-      "_isRevealOnCursorRange": true,
-      "_font": "noteplanstate",
-      "_color": "#C5487A"
+    "note-title-link-right-bracket": {
+      "color": "#97a1c8",
+      "isHiddenWithoutCursor": false
     },
     "URL-link": {
       "_regex": "\\[[^]]*?\\]\\(.*?\\)",
@@ -720,93 +681,22 @@
       "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
       "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 1,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
+      "color": "#97a1c8"
     },
     "URL-link-right-square-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 3,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
+      "color": "#97a1c8"
     },
     "URL-link-left-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 4,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
+      "color": "#97a1c8"
     },
     "URL-link-right-bracket": {
       "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
       "matchPosition": 6,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-
-    "#waiting": {
-      "COMMENT": "Turned off.",
-      "_regex": "^* (.*#waiting.*)$",
-      "_matchPosition": 1,
-      "_textColor": "#222E3388",
-      "_font": "PPNeueMontreal-Italic"
-    },
-    "eventID": {
-      "COMMENT": "Turned off.",
-      "_regex": "(event:[A-F0-9-]{36,37})",
-      "_matchPosition": 1,
-      "_color": "#CCA949",
-      "_isHiddenWithoutCursor": true,
-      "_isRevealOnCursorRange": false
-    },
-
-    "arrow-link": {
-      "regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
-      "matchPosition": 1,
-      "urlPosition": 1,
-      "backgroundColor": "#10468666",
-      "leftBorderPadding": 10,
-      "rightBorderPadding": 9,
-      "borderRadius": 6,
-      "horizontalMargin": 2,
-      "isRevealOnCursorRange": true,
-      "type": "noteLink",
-      "prefix": "noteplan://x-callback-url/openNote?noteTitle="
-    },
-    "arrow-left-delimiter": {
-      "regex": "(>)(\\S[^<]*)(<)",
-      "matchPosition": 1,
-      "color": "#8052629e",
-      "size": 12,
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "arrow-right-delimiter": {
-      "regex": "(>)(\\S[^<]*)(<)",
-      "matchPosition": 3,
-      "color": "#8052629e",
-      "size": 12,
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "verse-indicator": {
-      "COMMENT": "Turned off.",
-      "_regex": "(§)(.*)",
-      "_matchPosition": 1,
-      "_isHiddenWithoutCursor": true,
-      "_isRevealOnCursorRange": true,
-      "_isMarkdownCharacter": true,
-      "_color": "#8097a1c8"
-    },
-    "verse-text": {
-      "COMMENT": "Turned off.",
-      "_regex": "(¶)(.*)",
-      "_matchPosition": 2,
-      "_color": "#F04060",
-      "_backgroundColor": "#f0f0f0",
-      "_borderRadius": 4
+      "color": "#97a1c8"
     },
 
     "interesting-heading": {
