@@ -2,8 +2,8 @@
 accent: "#386a51"
 # Terminal background color
 background:
-  top: "#f2f3f8"
-  bottom: "#e4e7f1"
+  top: "#f8f9fb"
+  bottom: "#f2f3f8"
 # Whether the theme is lighter or darker.
 details: lighter
 # The foreground color.
@@ -18,7 +18,7 @@ terminal_colors:
     magenta: "#7b7393"
     red: "#bd533e"
     white: "#d7dbea"
-    yellow: "#ee9701"
+    yellow: "#f3b550"
   normal:
     black: "#212840"
     blue: "#40567a"
@@ -27,4 +27,4 @@ terminal_colors:
     magenta: "#775d93"
     red: "#8f564b"
     white: "#d7dbea"
-    yellow: "#cc8100"
+    yellow: "#b36f00"
