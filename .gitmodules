@@ -1,0 +1,3 @@
+[submodule "Bike"]
+	path = Bike
+	url = git@github.com:Erlendms/Bike-theme_Havn.git
