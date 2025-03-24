@@ -24,6 +24,9 @@
     "title-mark1",
     "title-mark2",
     "title-mark3",
+    "title-mark4",
+    "title-mark5",
+    "title-mark6",
     "body",
     "quote-content",
     "bold",
@@ -50,6 +53,9 @@
     "title1",
     "title2",
     "title3",
+    "title4",
+    "title5",
+    "title6",
     "note-title-link",
     "highlighted",
     "highlighted-left-marker",
@@ -302,7 +308,7 @@
     "quote-mark": {
       "headIndent": 33,
       "size": 16,
-      "color": "#40786f",
+      "color": "#d7dbea",
       "font": "noteplanstate"
     },
     "quote-content": {
@@ -315,8 +321,8 @@
 
     "title1": {
       "font": "AvenirNext-Bold",
-      "size": 23,
-      "color": "#eef0f6",
+      "size": 24,
+      "color": "#8ea6cd",
       "_horizontalMargin": -6
     },
     "title-in-frontmatter": {
@@ -324,64 +330,106 @@
       "matchPosition": 1,
       "font": "AvenirNext-Medium",
       "size": 16,
-      "color": "#eef0f6"
+      "color": "#8ea6cd"
     },
     "title-mark1": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 23,
-      "color": "#50eef0f6",
+      "size": 24,
+      "color": "#558ea6cd",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
 
     "title2": {
       "font": "AvenirNext-DemiBold",
-      "size": 22,
-      "color": "#eaecf4",
+      "size": 23,
+      "color": "#a7c8b9",
       "_horizontalMargin": -5
     },
     "title-mark2": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 22,
-      "color": "#50eaecf4",
+      "size": 23,
+      "color": "#55a7c8b9",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
 
     "title3": {
       "font": "AvenirNext-Medium",
-      "size": 21,
-      "color": "#e5e7f1",
+      "size": 22,
+      "color": "#c78ab7",
       "_horizontalMargin": -4
     },
     "title-mark3": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 21,
-      "color": "#50e5e7f1",
+      "size": 22,
+      "color": "#55c78ab7",
       "paragraphSpacingBefore": 14,
       "paragraphSpacing": 6
     },
 
     "title4": {
       "font": "AvenirNext-Regular",
-      "size": 20,
-      "color": "#dde0ed",
+      "size": 21,
+      "color": "#dda397",
       "_horizontalMargin": -3
     },
     "title-mark4": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 20,
-      "color": "#50dde0ed",
+      "size": 21,
+      "color": "#55dda397",
       "paragraphSpacingBefore": 12,
       "paragraphSpacing": 6
+    },
+
+    "title5": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 2,
+      "_isRevealOnCursorRange": true,
+      "color": "#be99cc",
+      "size": 18
+    },
+
+    "title-mark5": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": true,
+      "color": "#55be99cc",
+      "size": 18,
+      "font": "AvenirNext-UltraLight",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 3
+    },
+
+    "title6": {
+      "regex": "^\\h*(######+ )(.*)",
+      "matchPosition": 2,
+      "_isRevealOnCursorRange": true,
+      "color": "#ffe2b3",
+      "size": 16
+    },
+
+    "title-mark6": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": true,
+      "color": "#55ffe2b3",
+      "size": 16,
+      "font": "AvenirNext-UltraLight",
+      "paragraphSpacingBefore": 8,
+      "paragraphSpacing": 2
     },
 
     "Templates_tags-opener": {
@@ -423,7 +471,7 @@
     "todo": {
       "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
-      "color": "#40786f",
+      "color": "#d7dbea",
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4

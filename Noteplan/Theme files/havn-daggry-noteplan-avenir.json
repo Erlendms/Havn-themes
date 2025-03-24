@@ -9,7 +9,7 @@
   "editor": {
     "backgroundColor": "#fcfcfd",
     "altBackgroundColor": "#f2f3f8",
-    "tintColor": "386a51",
+    "tintColor": "#386a51",
     "tintColor2": "#9b73ab",
     "textColor": "#212840",
     "toolbarBackgroundColor": "#f2f3f8",
@@ -24,6 +24,9 @@
     "title-mark1",
     "title-mark2",
     "title-mark3",
+    "title-mark4",
+    "title-mark5",
+    "title-mark6",
     "body",
     "quote-content",
     "bold",
@@ -50,6 +53,9 @@
     "title1",
     "title2",
     "title3",
+    "title4",
+    "title5",
+    "title6",
     "note-title-link",
     "highlighted",
     "highlighted-left-marker",
@@ -300,7 +306,7 @@
     "quote-mark": {
       "headIndent": 33,
       "size": 16,
-      "color": "#386a51",
+      "color": "#363f66",
       "font": "noteplanstate"
     },
     "quote-content": {
@@ -313,8 +319,8 @@
 
     "title1": {
       "font": "AvenirNext-Bold",
-      "size": 23,
-      "color": "#212840",
+      "size": 24,
+      "color": "#6988bc",
       "_horizontalMargin": -6
     },
     "title-in-frontmatter": {
@@ -322,64 +328,106 @@
       "matchPosition": 1,
       "font": "AvenirNext-Medium",
       "size": 16,
-      "color": "#212840"
+      "color": "#6988bc"
     },
     "title-mark1": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 23,
-      "color": "#50212840",
+      "size": 24,
+      "color": "#556988bc",
       "paragraphSpacingBefore": 18,
       "paragraphSpacing": 9
     },
 
     "title2": {
       "font": "AvenirNext-DemiBold",
-      "size": 22,
-      "color": "#29304e",
+      "size": 23,
+      "color": "#6ba289",
       "_horizontalMargin": -5
     },
     "title-mark2": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 22,
-      "color": "#5029304e",
+      "size": 23,
+      "color": "#556ba289",
       "paragraphSpacingBefore": 16,
       "paragraphSpacing": 6
     },
 
     "title3": {
       "font": "AvenirNext-Medium",
-      "size": 21,
-      "color": "#30395c",
+      "size": 22,
+      "color": "#af5899",
       "_horizontalMargin": -4
     },
     "title-mark3": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 21,
-      "color": "#5030395c",
+      "size": 22,
+      "color": "#55af5899",
       "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 6
+      "paragraphSpacing": 4
     },
 
     "title4": {
       "font": "AvenirNext-Regular",
-      "size": 20,
-      "color": "#363f66",
+      "size": 21,
+      "color": "#bd533e",
       "_horizontalMargin": -3
     },
     "title-mark4": {
       "isMarkdownCharacter": true,
       "isHiddenWithoutCursor": true,
       "font": "AvenirNext-UltraLight",
-      "size": 20,
-      "color": "#50363f66",
+      "size": 21,
+      "color": "#55bd533e",
       "paragraphSpacingBefore": 12,
-      "paragraphSpacing": 6
+      "paragraphSpacing": 4
+    },
+
+    "title5": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 2,
+      "_isRevealOnCursorRange": true,
+      "color": "#8d609f",
+      "size": 18
+    },
+
+    "title-mark5": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": true,
+      "color": "#558d609f",
+      "size": 18,
+      "font": "AvenirNext-UltraLight",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 3
+    },
+
+    "title6": {
+      "regex": "^\\h*(######+ )(.*)",
+      "matchPosition": 2,
+      "_isRevealOnCursorRange": true,
+      "color": "#a86800",
+      "size": 16
+    },
+
+    "title-mark6": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "_isRevealOnCursorRange": true,
+      "color": "#55a86800",
+      "size": 16,
+      "font": "AvenirNext-UltraLight",
+      "paragraphSpacingBefore": 8,
+      "paragraphSpacing": 2
     },
 
     "Templates_tags-opener": {
@@ -421,7 +469,7 @@
     "todo": {
       "COMMENT": "Covers todos and bullets",
       "font": "noteplanstate",
-      "color": "#386a51",
+      "color": "#3e4a77",
       "headIndent": 33,
       "lineSpacing": 0.9,
       "paragraphSpacing": 4
