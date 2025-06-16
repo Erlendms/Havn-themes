@@ -1,679 +1,1789 @@
 {
-  "name": "Havn Skumring Avenir",
-  "comment": "This is supposed to work without any extra fonts installed.",
-  "style": "Dark",
-  "author": {
-    "name": "Havn.blog",
-    "email": "post@havn.online"
-  },
-  "editor": {
-    "backgroundColor": "#1a1e30",
-    "altBackgroundColor": "#121521",
-    "tintColor": "#54a094",
-    "tintColor2": "#b699c2",
-    "textColor": "#eef0f6",
-    "toolbarBackgroundColor": "#121521",
-    "toolbarIconColor": "#d7dbea",
-    "menuItemColor": "#d7dbea",
-    "timeBlockColor": "#da8174",
-    "sidebarStyleOverride": "dark",
-    "sidebarIconColorOverride": "#d7dbea",
-    "shouldOverwriteFont": false
-  },
-  "orderedStyles": [
-    "title-mark1",
-    "title-mark2",
-    "title-mark3",
-    "title-mark4",
-    "title-mark5",
-    "title-mark6",
-    "body",
-    "quote-content",
-    "bold",
-    "bold-left-mark",
-    "bold-right-mark",
-    "italic",
-    "italic-left-mark",
-    "italic-right-mark",
-    "boldItalic",
-    "boldItalic-left-mark",
-    "boldItalic-right-mark",
-    "code",
-    "code-left-backtick",
-    "code-right-backtick",
-    "special-char",
-    "checked-todo-characters",
-    "checked-scheduled",
-    "quote-mark",
-    "NoteLinks-main",
-    "link",
-    "Timeblock-Hide-Tag",
-    "schedule-to-date-link",
-    "schedule-from-date-link",
-    "title1",
-    "title2",
-    "title3",
-    "title4",
-    "title5",
-    "title6",
-    "note-title-link",
-    "highlighted",
-    "highlighted-left-marker",
-    "highlighted-right-marker",
-    "working-on",
-    "flagged-1",
-    "flagged-2",
-    "flagged-3",
-    "starred",
-    "starred-list",
-    "interesting-border",
-    "interesting-content",
-    "interesting-heading",
-    "interesting-right-delimiter",
-    "interesting-left-delimiter",
-    "disagree-border",
-    "disagree-content",
-    "disagree-heading",
-    "disagree-right-delimiter",
-    "disagree-left-delimiter",
-    "reading-border",
-    "reading-content",
-    "reading-heading",
-    "reading-right-delimiter",
-    "reading-left-delimiter",
-    "definition-border",
-    "definition-content",
-    "definition-heading",
-    "definition-right-delimiter",
-    "definition-left-delimiter",
-    "key-border",
-    "key-content",
-    "key-heading",
-    "key-right-delimiter",
-    "key-left-delimiter",
-    "critique-border",
-    "critique-content",
-    "critique-heading",
-    "critique-right-delimiter",
-    "critique-left-delimiter",
-    "example-border",
-    "example-content",
-    "example-heading",
-    "example-right-delimiter",
-    "example-left-delimiter",
-    "todo",
-    "phonenumber",
-    "deadline",
-    "hashtag",
-    "attag",
-    "timeblocks",
-    "checked",
-    "checked-canceled",
-    "checked-canceled-text",
-    "done-date",
-    "tabbed"
-  ],
-  "styles": {
-    "body": {
-      "font": "AvenirNext-Regular",
-      "size": 16,
-      "color": "#d7dbea",
-      "lineSpacing": 2,
-      "paragraphSpacingBefore": 1,
-      "paragraphSpacing": 6
-    },
+	"name": "Havn Skumring Avenir",
+	"comment": "This is supposed to work without any extra fonts installed.",
+	"style": "Dark",
+	"author": {
+		"name": "Havn.blog",
+		"email": "post@havn.online"
+	},
+	"editor": {
+		"backgroundColor": "#1a1e30",
+		"altBackgroundColor": "#121521",
+		"tintColor": "#54a094",
+		"tintColor2": "#b699c2",
+		"textColor": "#eef0f6",
+		"toolbarBackgroundColor": "#121521",
+		"toolbarIconColor": "#d7dbea",
+		"menuItemColor": "#d7dbea",
+		"timeBlockColor": "#da8174",
+		"sidebarStyleOverride": "dark",
+		"sidebarIconColorOverride": "#d7dbea",
+		"shouldOverwriteFont": false
+	},
+	"orderedStyles": [
+		"title-mark1",
+		"title-mark2",
+		"title-mark3",
+		"title-mark4",
+		"title-mark5",
+		"title-mark6",
+		"body",
+		"quote-content",
+		"bold",
+		"bold-left-mark",
+		"bold-right-mark",
+		"italic",
+		"italic-left-mark",
+		"italic-right-mark",
+		"boldItalic",
+		"boldItalic-left-mark",
+		"boldItalic-right-mark",
+		"code",
+		"code-left-backtick",
+		"code-right-backtick",
+		"special-char",
+		"checked-todo-characters",
+		"checked-scheduled",
+		"quote-mark",
+		"NoteLinks-main",
+		"link",
+		"Timeblock-Hide-Tag",
+		"schedule-to-date-link",
+		"schedule-from-date-link",
+		"title1",
+		"title2",
+		"title3",
+		"title4",
+		"title5",
+		"title6",
+		"note-title-link",
+		"highlighted",
+		"highlighted-left-marker",
+		"highlighted-right-marker",
+		"working-on",
+		"flagged-1",
+		"flagged-2",
+		"flagged-3",
+		"starred",
+		"starred-list",
+		"interesting-border",
+		"interesting-content",
+		"interesting-heading",
+		"interesting-right-delimiter",
+		"interesting-left-delimiter",
+		"disagree-border",
+		"disagree-content",
+		"disagree-heading",
+		"disagree-right-delimiter",
+		"disagree-left-delimiter",
+		"reading-border",
+		"reading-content",
+		"reading-heading",
+		"reading-right-delimiter",
+		"reading-left-delimiter",
+		"definition-border",
+		"definition-content",
+		"definition-heading",
+		"definition-right-delimiter",
+		"definition-left-delimiter",
+		"key-border",
+		"key-content",
+		"key-heading",
+		"key-right-delimiter",
+		"key-left-delimiter",
+		"critique-border",
+		"critique-content",
+		"critique-heading",
+		"critique-right-delimiter",
+		"critique-left-delimiter",
+		"example-border",
+		"example-content",
+		"example-heading",
+		"example-right-delimiter",
+		"example-left-delimiter",
+		"todo",
+		"phonenumber",
+		"deadline",
+		"hashtag",
+		"attag",
+		"timeblocks",
+		"checked",
+		"checked-canceled",
+		"checked-canceled-text",
+		"done-date",
+		"tabbed"
+	],
+	"styles": {
+		"body": {
+			"font": "AvenirNext-Regular",
+			"size": 16,
+			"color": "#d7dbea",
+			"lineSpacing": 2,
+			"paragraphSpacingBefore": 1,
+			"paragraphSpacing": 6
+		},
 
-    "tabbed": {
-      "headIndent": 43
-    },
+		"tabbed": {
+			"headIndent": 43
+		},
 
-    "bold": {
-      "font": "AvenirNext-DemiBold",
-      "color": "#fad7dbea"
-    },
-    "bold-left-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#40d7dbea"
-    },
-    "bold-right-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#40d7dbea"
-    },
+		"bold": {
+			"font": "AvenirNext-DemiBold",
+			"color": "#fad7dbea"
+		},
+		"bold-left-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#40d7dbea"
+		},
+		"bold-right-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#40d7dbea"
+		},
 
-    "italic": {
-      "font": "AvenirNext-Italic",
-      "color": "#ebedf4"
-    },
-    "italic-left-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 12,
-      "color": "#40b3d5d2"
-    },
-    "italic-right-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 12,
-      "color": "#40b3d5d2"
-    },
+		"italic": {
+			"font": "AvenirNext-Italic",
+			"color": "#ebedf4"
+		},
+		"italic-left-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 12,
+			"color": "#40b3d5d2"
+		},
+		"italic-right-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 12,
+			"color": "#40b3d5d2"
+		},
 
-    "boldItalic": {
-      "font": "AvenirNext-DemiBoldItalic",
-      "color": "#eeebedf4"
-    },
-    "boldItalic-left-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 8,
-      "color": "#40d4e7e5"
-    },
-    "boldItalic-right-mark": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 8,
-      "color": "#40d4e7e5"
-    },
+		"boldItalic": {
+			"font": "AvenirNext-DemiBoldItalic",
+			"color": "#eeebedf4"
+		},
+		"boldItalic-left-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 8,
+			"color": "#40d4e7e5"
+		},
+		"boldItalic-right-mark": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 8,
+			"color": "#40d4e7e5"
+		},
 
-    "underline": {
-      "underlineStyle": 1,
-      "underlineColor": "#40786f"
-    },
-    "underline-left-tilde": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 12,
-      "color": "#9940786f"
-    },
-    "underline-right-tilde": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 12,
-      "color": "#9940786f"
-    },
+		"underline": {
+			"underlineStyle": 1,
+			"underlineColor": "#40786f"
+		},
+		"underline-left-tilde": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 12,
+			"color": "#9940786f"
+		},
+		"underline-right-tilde": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 12,
+			"color": "#9940786f"
+		},
 
-    "strikethrough": {
-      "strikethroughStyle": 2,
-      "color": "#97a1c8",
-      "strikethroughColor": "#aad7dbea"
-    },
-    "strikethrough-left-tilde": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#97a1c8"
-    },
-    "strikethrough-right-tilde": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#97a1c8"
-    },
+		"strikethrough": {
+			"strikethroughStyle": 2,
+			"color": "#97a1c8",
+			"strikethroughColor": "#aad7dbea"
+		},
+		"strikethrough-left-tilde": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#97a1c8"
+		},
+		"strikethrough-right-tilde": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#97a1c8"
+		},
 
-    "highlighted": {
-      "backgroundColor": "#40da8174",
-      "color": "#e5e7f1",
-      "leftBorderPadding": 4,
-      "rightBorderPadding": 4,
-      "borderRadius": 6,
-      "horizontalMargin": 6,
-      "order": 35
-    },
-    "highlighted-left-marker": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#66da8174"
-    },
-    "highlighted-right-marker": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "size": 10,
-      "color": "#66da8174"
-    },
+		"highlighted": {
+			"backgroundColor": "#40da8174",
+			"color": "#e5e7f1",
+			"leftBorderPadding": 4,
+			"rightBorderPadding": 4,
+			"borderRadius": 6,
+			"horizontalMargin": 6,
+			"order": 35
+		},
+		"highlighted-left-marker": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#66da8174"
+		},
+		"highlighted-right-marker": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 10,
+			"color": "#66da8174"
+		},
 
-    "inline-comment": {
-      "regex": "(%)(%([^%]+)%)",
-      "matchPosition": 2,
-      "isRevealOnCursorRange": true,
-      "isHiddenWithoutCursor": true,
-      "color": "#b699c2"
-    },
-    "inline-comment-mark-start": {
-      "regex": "(%%)",
-      "matchPosition": 0,
-      "isMarkdownCharacter": true,
-      "color": "#9f79af"
-    },
-    "inline-comment-mark-end": {
-      "regex": "(%%)",
-      "matchPosition": 0,
-      "isMarkdownCharacter": true,
-      "color": "#9f79af"
-    },
+		"inline-comment": {
+			"regex": "(%)(%([^%]+)%)",
+			"matchPosition": 2,
+			"isRevealOnCursorRange": true,
+			"isHiddenWithoutCursor": true,
+			"color": "#b699c2"
+		},
+		"inline-comment-mark-start": {
+			"regex": "(%%)",
+			"matchPosition": 0,
+			"isMarkdownCharacter": true,
+			"color": "#9f79af"
+		},
+		"inline-comment-mark-end": {
+			"regex": "(%%)",
+			"matchPosition": 0,
+			"isMarkdownCharacter": true,
+			"color": "#9f79af"
+		},
 
-    "code": {
-      "font": "Menlo-Regular",
-      "size": 14,
-      "backgroundColor": "#5E050505",
-      "color": "#e5e7f1",
-      "leftBorderPadding": 8,
-      "rightBorderPadding": 6,
-      "inlineBorder": false,
-      "borderRadius": 6,
-      "horizontalMargin": 2
-    },
-    "code-left-backtick": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "color": "#97a1c8"
-    },
-    "code-right-backtick": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": false,
-      "color": "#97a1c8"
-    },
+		"code": {
+			"font": "Menlo-Regular",
+			"size": 14,
+			"backgroundColor": "#5E050505",
+			"color": "#e5e7f1",
+			"leftBorderPadding": 8,
+			"rightBorderPadding": 6,
+			"inlineBorder": false,
+			"borderRadius": 6,
+			"horizontalMargin": 2
+		},
+		"code-left-backtick": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"color": "#97a1c8"
+		},
+		"code-right-backtick": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"color": "#97a1c8"
+		},
 
-    "code-fence": {
-      "theme": "tomorrow-night",
-      "body": {
-        "font": "Menlo-Regular",
-        "size": 14,
-        "backgroundColor": "#5E050505",
-        "paragraphSpacingBefore": 0,
-        "paragraphSpacing": 0
-      },
-      "corner-radius": 8,
-      "fence-open": {
-        "isMarkdownCharacter": true,
-        "isHiddenWithoutCursor": false,
-        "color": "#97a1c8"
-      },
-      "fence-close": {
-        "isMarkdownCharacter": true,
-        "isHiddenWithoutCursor": false,
-        "color": "#97a1c8"
-      },
-      "language-specifier": {
-        "font": "Menlo-Italic",
-        "size": 14,
-        "color": "#97a1c8",
-        "paragraphSpacing": 0
-      }
-    },
+		"code-fence": {
+			"theme": "tomorrow-night",
+			"body": {
+				"font": "Menlo-Regular",
+				"size": 14,
+				"backgroundColor": "#5E050505",
+				"paragraphSpacingBefore": 0,
+				"paragraphSpacing": 0
+			},
+			"corner-radius": 8,
+			"fence-open": {
+				"isMarkdownCharacter": true,
+				"isHiddenWithoutCursor": false,
+				"color": "#97a1c8"
+			},
+			"fence-close": {
+				"isMarkdownCharacter": true,
+				"isHiddenWithoutCursor": false,
+				"color": "#97a1c8"
+			},
+			"language-specifier": {
+				"font": "Menlo-Italic",
+				"size": 14,
+				"color": "#97a1c8",
+				"paragraphSpacing": 0
+			}
+		},
 
-    "quote-mark": {
-      "headIndent": 33,
-      "size": 16,
-      "color": "#d7dbea",
-      "font": "noteplanstate"
-    },
-    "quote-content": {
-      "headIndent": 33,
-      "color": "#e5e7f1",
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4,
-      "paragraphSpacingBefore": 0
-    },
+		"quote-mark": {
+			"headIndent": 33,
+			"size": 16,
+			"color": "#d7dbea",
+			"font": "noteplanstate"
+		},
+		"quote-content": {
+			"headIndent": 33,
+			"color": "#e5e7f1",
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4,
+			"paragraphSpacingBefore": 0
+		},
 
-    "title1": {
-      "font": "AvenirNext-Bold",
-      "size": 24,
-      "color": "#8ea6cd",
-      "_horizontalMargin": -6
-    },
-    "title-in-frontmatter": {
-      "regex": "^[tT]itle:\\s+(.*)",
-      "matchPosition": 1,
-      "font": "AvenirNext-Medium",
-      "size": 16,
-      "color": "#8ea6cd"
-    },
-    "title-mark1": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "font": "AvenirNext-UltraLight",
-      "size": 24,
-      "color": "#558ea6cd",
-      "paragraphSpacingBefore": 18,
-      "paragraphSpacing": 9
-    },
+		"title1": {
+			"font": "AvenirNext-Bold",
+			"size": 24,
+			"color": "#8ea6cd",
+			"_horizontalMargin": -6
+		},
+		"title-in-frontmatter": {
+			"regex": "^[tT]itle:\\s+(.*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Medium",
+			"size": 16,
+			"color": "#8ea6cd"
+		},
+		"title-mark1": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"font": "AvenirNext-UltraLight",
+			"size": 24,
+			"color": "#558ea6cd",
+			"paragraphSpacingBefore": 18,
+			"paragraphSpacing": 9
+		},
+		"title1-asterisk-italic1-text": {
+			"regex": "^# .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-asterisk-italic1-left-mark": {
+			"regex": "^# .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic1-right-mark": {
+			"regex": "^# .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic2-text": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-asterisk-italic2-left-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic2-right-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic3-text": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-asterisk-italic3-left-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic3-right-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic4-text": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-asterisk-italic4-left-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-asterisk-italic4-right-mark": {
+			"regex": "^# .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
 
-    "title2": {
-      "font": "AvenirNext-DemiBold",
-      "size": 23,
-      "color": "#a7c8b9",
-      "_horizontalMargin": -5
-    },
-    "title-mark2": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "font": "AvenirNext-UltraLight",
-      "size": 23,
-      "color": "#55a7c8b9",
-      "paragraphSpacingBefore": 16,
-      "paragraphSpacing": 6
-    },
+		"title1-underscore-italic1-text": {
+			"regex": "^# .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-underscore-italic1-left-mark": {
+			"regex": "^# .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic1-right-mark": {
+			"regex": "^# .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic2-text": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-underscore-italic2-left-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic2-right-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic3-text": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-underscore-italic3-left-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic3-right-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic4-text": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-BoldItalic",
+			"size": 24,
+			"color": "#8ea6cd"
+		},
+		"title1-underscore-italic4-left-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
+		"title1-underscore-italic4-right-mark": {
+			"regex": "^# .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 24,
+			"color": "#558ea6cd"
+		},
 
-    "title3": {
-      "font": "AvenirNext-Medium",
-      "size": 22,
-      "color": "#c78ab7",
-      "_horizontalMargin": -4
-    },
-    "title-mark3": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "font": "AvenirNext-UltraLight",
-      "size": 22,
-      "color": "#55c78ab7",
-      "paragraphSpacingBefore": 14,
-      "paragraphSpacing": 6
-    },
+		"title2": {
+			"font": "AvenirNext-DemiBold",
+			"size": 23,
+			"color": "#a7c8b9",
+			"_horizontalMargin": -5
+		},
+		"title-mark2": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"font": "AvenirNext-UltraLight",
+			"size": 23,
+			"color": "#55a7c8b9",
+			"paragraphSpacingBefore": 16,
+			"paragraphSpacing": 6
+		},
+		"title2-asterisk-italic1-text": {
+			"regex": "^## .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-asterisk-italic1-left-mark": {
+			"regex": "^## .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic1-right-mark": {
+			"regex": "^## .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic2-text": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-asterisk-italic2-left-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic2-right-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic3-text": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-asterisk-italic3-left-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic3-right-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic4-text": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-asterisk-italic4-left-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-asterisk-italic4-right-mark": {
+			"regex": "^## .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
 
-    "title4": {
-      "font": "AvenirNext-Regular",
-      "size": 21,
-      "color": "#dda397",
-      "_horizontalMargin": -3
-    },
-    "title-mark4": {
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "font": "AvenirNext-UltraLight",
-      "size": 21,
-      "color": "#55dda397",
-      "paragraphSpacingBefore": 12,
-      "paragraphSpacing": 6
-    },
+		"title2-underscore-italic1-text": {
+			"regex": "^## .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-underscore-italic1-left-mark": {
+			"regex": "^## .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic1-right-mark": {
+			"regex": "^## .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic2-text": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-underscore-italic2-left-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic2-right-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic3-text": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-underscore-italic3-left-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic3-right-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic4-text": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-DemiBoldItalic",
+			"size": 23,
+			"color": "#a7c8b9"
+		},
+		"title2-underscore-italic4-left-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
+		"title2-underscore-italic4-right-mark": {
+			"regex": "^## .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 23,
+			"color": "#55a7c8b9"
+		},
 
-    "title5": {
-      "regex": "^\\h*(#####+ )(.*)",
-      "matchPosition": 2,
-      "_isRevealOnCursorRange": true,
-      "color": "#be99cc",
-      "size": 18
-    },
+		"title3": {
+			"font": "AvenirNext-Medium",
+			"size": 22,
+			"color": "#c78ab7",
+			"_horizontalMargin": -4
+		},
+		"title-mark3": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"font": "AvenirNext-UltraLight",
+			"size": 22,
+			"color": "#55c78ab7",
+			"paragraphSpacingBefore": 14,
+			"paragraphSpacing": 6
+		},
+		"title3-asterisk-italic1-text": {
+			"regex": "^### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-asterisk-italic1-left-mark": {
+			"regex": "^### .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic1-right-mark": {
+			"regex": "^### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic2-text": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-asterisk-italic2-left-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic2-right-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic3-text": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-asterisk-italic3-left-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic3-right-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic4-text": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-asterisk-italic4-left-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-asterisk-italic4-right-mark": {
+			"regex": "^### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
 
-    "title-mark5": {
-      "regex": "^\\h*(#####+ )(.*)",
-      "matchPosition": 1,
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "_isRevealOnCursorRange": true,
-      "color": "#55be99cc",
-      "size": 18,
-      "font": "AvenirNext-UltraLight",
-      "paragraphSpacingBefore": 10,
-      "paragraphSpacing": 3
-    },
+		"title3-underscore-italic1-text": {
+			"regex": "^### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-underscore-italic1-left-mark": {
+			"regex": "^### .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic1-right-mark": {
+			"regex": "^### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic2-text": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-underscore-italic2-left-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic2-right-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic3-text": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-underscore-italic3-left-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic3-right-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic4-text": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-MediumItalic",
+			"size": 22,
+			"color": "#c78ab7"
+		},
+		"title3-underscore-italic4-left-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
+		"title3-underscore-italic4-right-mark": {
+			"regex": "^### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 22,
+			"color": "#55c78ab7"
+		},
 
-    "title6": {
-      "regex": "^\\h*(######+ )(.*)",
-      "matchPosition": 2,
-      "_isRevealOnCursorRange": true,
-      "color": "#ffe2b3",
-      "size": 16
-    },
+		"title4": {
+			"font": "AvenirNext-Regular",
+			"size": 21,
+			"color": "#dda397",
+			"_horizontalMargin": -3
+		},
+		"title-mark4": {
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"font": "AvenirNext-UltraLight",
+			"size": 21,
+			"color": "#55dda397",
+			"paragraphSpacingBefore": 12,
+			"paragraphSpacing": 6
+		},
+		"title4-asterisk-italic1-text": {
+			"regex": "^#### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-asterisk-italic1-left-mark": {
+			"regex": "^#### .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic1-right-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic2-text": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-asterisk-italic2-left-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic2-right-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic3-text": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-RegularItalic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-asterisk-italic3-left-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic3-right-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic4-text": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-asterisk-italic4-left-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-asterisk-italic4-right-mark": {
+			"regex": "^#### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
 
-    "title-mark6": {
-      "regex": "^\\h*(#####+ )(.*)",
-      "matchPosition": 1,
-      "isMarkdownCharacter": true,
-      "isHiddenWithoutCursor": true,
-      "_isRevealOnCursorRange": true,
-      "color": "#55ffe2b3",
-      "size": 16,
-      "font": "AvenirNext-UltraLight",
-      "paragraphSpacingBefore": 8,
-      "paragraphSpacing": 2
-    },
+		"title4-underscore-italic1-text": {
+			"regex": "^#### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-underscore-italic1-left-mark": {
+			"regex": "^#### .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic1-right-mark": {
+			"regex": "^#### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic2-text": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-underscore-italic2-left-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic2-right-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic3-text": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-underscore-italic3-left-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic3-right-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic4-text": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-RegularItalic",
+			"size": 21,
+			"color": "#dda397"
+		},
+		"title4-underscore-italic4-left-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
+		"title4-underscore-italic4-right-mark": {
+			"regex": "^#### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 21,
+			"color": "#55dda397"
+		},
 
-    "Templates_tags-opener": {
-      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
-      "matchPosition": 1,
-      "font": "Menlo-Regular",
-      "size": 14,
-      "color": "#809f79af"
-    },
-    "Templates_tags": {
-      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
-      "matchPosition": 2,
-      "font": "Menlo-Regular",
-      "size": 14,
-      "color": "#9f79af"
-    },
-    "Templates_tags-closer": {
-      "regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
-      "matchPosition": 3,
-      "font": "Menlo-Regular",
-      "size": 14,
-      "color": "#809f79af"
-    },
-    "Templates_tags-commented-out": {
-      "regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
-      "matchPosition": 1,
-      "font": "Menlo-Regular",
-      "size": 14,
-      "color": "#779f79af"
-    },
+		"title5": {
+			"regex": "^\\h*(#####+ )(.*)",
+			"matchPosition": 2,
+			"_isRevealOnCursorRange": true,
+			"color": "#be99cc",
+			"size": 18
+		},
 
-    "checked-todo-characters": {
-      "font": "noteplanstate",
-      "headIndent": 33,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
+		"title-mark5": {
+			"regex": "^\\h*(#####+ )(.*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"_isRevealOnCursorRange": true,
+			"color": "#55be99cc",
+			"size": 18,
+			"font": "AvenirNext-UltraLight",
+			"paragraphSpacingBefore": 10,
+			"paragraphSpacing": 3
+		},
+		"title5-asterisk-italic1-text": {
+			"regex": "^##### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-asterisk-italic1-left-mark": {
+			"regex": "^##### .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic1-right-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic2-text": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-asterisk-italic2-left-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic2-right-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic3-text": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-asterisk-italic3-left-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic3-right-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic4-text": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-asterisk-italic4-left-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-asterisk-italic4-right-mark": {
+			"regex": "^##### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
 
-    "todo": {
-      "COMMENT": "Covers todos and bullets",
-      "font": "noteplanstate",
-      "color": "#d7dbea",
-      "headIndent": 33,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
-    "checked": {
-      "color": "#52629e",
-      "headIndent": 33,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
-    "checked-scheduled": {
-      "regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
-      "matchPosition": 0,
-      "color": "#e94f2d",
-      "headIndent": 33,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
-    "checked-canceled": {
-      "COMMENT": "Covers whole line, colouring it",
-      "regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
-      "color": "#80e8b017",
-      "headIndent": 33,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
-    "checked-canceled-text": {
-      "COMMENT": "Strikes out just the text",
-      "regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
-      "matchPosition": 3,
-      "color": "#80e8b017",
-      "strikethroughColor": "#99e8b017",
-      "strikethroughStyle": 2,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
+		"title5-underscore-italic1-text": {
+			"regex": "^##### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-underscore-italic1-left-mark": {
+			"regex": "^##### .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic1-right-mark": {
+			"regex": "^##### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic2-text": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-underscore-italic2-left-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic2-right-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic3-text": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-underscore-italic3-left-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic3-right-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic4-text": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-RegularItalic",
+			"size": 18,
+			"color": "#be99cc"
+		},
+		"title5-underscore-italic4-left-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
+		"title5-underscore-italic4-right-mark": {
+			"regex": "^##### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 18,
+			"color": "#55be99cc"
+		},
 
-    "done-date": {
-      "color": "#52629e",
-      "backgroundColor": "#5E050505",
-      "leftBorderPadding": 5,
-      "rightBorderPadding": 5,
-      "borderRadius": 6,
-      "horizontalMargin": 2,
-      "size": 14
-    },
+		"title6": {
+			"regex": "^\\h*(######+ )(.*)",
+			"matchPosition": 2,
+			"_isRevealOnCursorRange": true,
+			"color": "#ffe2b3",
+			"size": 16
+		},
 
-    "working-on": {
-      "backgroundColor": "#5040786f",
-      "color": "#e5e7f1",
-      "leftBorderPadding": -19,
-      "rightBorderPadding": 6,
-      "borderRadius": 3,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 4
-    },
+		"title-mark6": {
+			"regex": "^\\h*(#####+ )(.*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": true,
+			"_isRevealOnCursorRange": true,
+			"color": "#55ffe2b3",
+			"size": 16,
+			"font": "AvenirNext-UltraLight",
+			"paragraphSpacingBefore": 8,
+			"paragraphSpacing": 2
+		},
+		"title6-asterisk-italic1-text": {
+			"regex": "^###### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-asterisk-italic1-left-mark": {
+			"regex": "^###### .*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic1-right-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic2-text": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-asterisk-italic2-left-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic2-right-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic3-text": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-RegularItalic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-asterisk-italic3-left-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic3-right-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic4-text": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-asterisk-italic4-left-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?((?<!\\*)\\*)((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)\\*(?!\\*)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-asterisk-italic4-right-mark": {
+			"regex": "^###### .*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*(?:[^\\*]|(?<!\\*)\\*(?!\\*))+?\\*(?!\\*).*?(?<!\\*)\\*((?:[^\\*]|(?<!\\*)\\*(?!\\*))+?)(\\*)(?!\\*)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
 
-    "flagged-1": {
-      "backgroundColor": "#30e9745a",
-      "color": "#e5e7f1",
-      "leftBorderPadding": -19,
-      "rightBorderPadding": 6,
-      "borderRadius": 3,
-      "horizontalMargin": 2,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 3
-    },
-    "flagged-2": {
-      "backgroundColor": "#40e96143",
-      "color": "#eaecf4",
-      "leftBorderPadding": -19,
-      "rightBorderPadding": 6,
-      "borderRadius": 3,
-      "horizontalMargin": 2,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 3
-    },
-    "flagged-3": {
-      "backgroundColor": "#50e94f2d",
-      "color": "#eef0f6",
-      "leftBorderPadding": -19,
-      "rightBorderPadding": 6,
-      "borderRadius": 3,
-      "horizontalMargin": 2,
-      "lineSpacing": 0.9,
-      "paragraphSpacing": 3
-    },
+		"title6-underscore-italic1-text": {
+			"regex": "^###### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-underscore-italic1-left-mark": {
+			"regex": "^###### .*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic1-right-mark": {
+			"regex": "^###### .*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic2-text": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-underscore-italic2-left-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic2-right-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic3-text": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-Italic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-underscore-italic3-left-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic3-right-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic4-text": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"font": "AvenirNext-RegularItalic",
+			"size": 16,
+			"color": "#ffe2b3"
+		},
+		"title6-underscore-italic4-left-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?((?<!_)_)((?:[^_]|(?<!_)_(?!_))+?)_(?!_)",
+			"matchPosition": 1,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
+		"title6-underscore-italic4-right-mark": {
+			"regex": "^###### .*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_(?:[^_]|(?<!_)_(?!_))+?_(?!_).*?(?<!_)_((?:[^_]|(?<!_)_(?!_))+?)(_)(?!_)",
+			"matchPosition": 2,
+			"isMarkdownCharacter": true,
+			"isHiddenWithoutCursor": false,
+			"size": 16,
+			"color": "#55ffe2b3"
+		},
 
-    "timeblocks": {
-      "regex": "(?:^\\s*(?:\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
-      "matchPosition": 1,
-      "color": "#da8174"
-    },
+		"Templates_tags-opener": {
+			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+			"matchPosition": 1,
+			"font": "Menlo-Regular",
+			"size": 14,
+			"color": "#809f79af"
+		},
+		"Templates_tags": {
+			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+			"matchPosition": 2,
+			"font": "Menlo-Regular",
+			"size": 14,
+			"color": "#9f79af"
+		},
+		"Templates_tags-closer": {
+			"regex": "(<%[\\-=_~]?\\s+)(.*?)(\\s+[\\-]?%>)",
+			"matchPosition": 3,
+			"font": "Menlo-Regular",
+			"size": 14,
+			"color": "#809f79af"
+		},
+		"Templates_tags-commented-out": {
+			"regex": "(<%#\\s+.*?\\s+[\\-]?%>)",
+			"matchPosition": 1,
+			"font": "Menlo-Regular",
+			"size": 14,
+			"color": "#779f79af"
+		},
 
-    "deadline": {
-      "regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
-      "matchPosition": 1,
-      "font": "AvenirNext-Medium",
-      "color": "#ed7054"
-    },
+		"checked-todo-characters": {
+			"font": "noteplanstate",
+			"headIndent": 33,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
 
-    "hashtag": {
-      "color": "#97a1c8",
-      "backgroundColor": "#2052629e",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
-      "horizontalMargin": 2,
-      "type": ""
-    },
-    "attag": {
-      "color": "#b699c2",
-      "backgroundColor": "#209f79af",
-      "leftBorderPadding": 3,
-      "rightBorderPadding": 3,
-      "borderRadius": 6,
-      "horizontalMargin": 2,
-      "type": ""
-    },
+		"todo": {
+			"COMMENT": "Covers todos and bullets",
+			"font": "noteplanstate",
+			"color": "#d7dbea",
+			"headIndent": 33,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
+		"checked": {
+			"color": "#52629e",
+			"headIndent": 33,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
+		"checked-scheduled": {
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] ).*",
+			"matchPosition": 0,
+			"color": "#e94f2d",
+			"headIndent": 33,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
+		"checked-canceled": {
+			"COMMENT": "Covers whole line, colouring it",
+			"regex": "(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ).*",
+			"color": "#80e8b017",
+			"headIndent": 33,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
+		"checked-canceled-text": {
+			"COMMENT": "Strikes out just the text",
+			"regex": "(?:(^\\h*[\\*\\-\\+] |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] ))(.*)",
+			"matchPosition": 3,
+			"color": "#80e8b017",
+			"strikethroughColor": "#99e8b017",
+			"strikethroughStyle": 2,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
 
-    "special-char": {
-      "COMMENT": "Is this needed?",
-      "font": "Menlo-Bold"
-    },
+		"done-date": {
+			"color": "#52629e",
+			"backgroundColor": "#5E050505",
+			"leftBorderPadding": 5,
+			"rightBorderPadding": 5,
+			"borderRadius": 6,
+			"horizontalMargin": 2,
+			"size": 14
+		},
 
-    "phonenumber": {
-      "COMMENT": "How do I render? Don't know if it works.",
-      "color": "#b699c2"
-    },
+		"working-on": {
+			"backgroundColor": "#5040786f",
+			"color": "#e5e7f1",
+			"leftBorderPadding": -19,
+			"rightBorderPadding": 6,
+			"borderRadius": 3,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 4
+		},
 
-    "NoteLinks-main": {
-      "regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
-      "matchPosition": 2,
-      "color": "#54a094"
-    },
-    "note-title-link-left-bracket": {
-      "color": "#8097a1c8",
-      "isHiddenWithoutCursor": false
-    },
-    "note-title-link-right-bracket": {
-      "color": "#8097a1c8",
-      "isHiddenWithoutCursor": false
-    },
+		"flagged-1": {
+			"backgroundColor": "#30e9745a",
+			"color": "#e5e7f1",
+			"leftBorderPadding": -19,
+			"rightBorderPadding": 6,
+			"borderRadius": 3,
+			"horizontalMargin": 2,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 3
+		},
+		"flagged-2": {
+			"backgroundColor": "#40e96143",
+			"color": "#eaecf4",
+			"leftBorderPadding": -19,
+			"rightBorderPadding": 6,
+			"borderRadius": 3,
+			"horizontalMargin": 2,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 3
+		},
+		"flagged-3": {
+			"backgroundColor": "#50e94f2d",
+			"color": "#eef0f6",
+			"leftBorderPadding": -19,
+			"rightBorderPadding": 6,
+			"borderRadius": 3,
+			"horizontalMargin": 2,
+			"lineSpacing": 0.9,
+			"paragraphSpacing": 3
+		},
 
-    "URL-link-left-square-bracket": {
-      "COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
-      "regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
-      "matchPosition": 1,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "URL-link-right-square-bracket": {
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
-      "matchPosition": 3,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "URL-link-left-bracket": {
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
-      "matchPosition": 4,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "URL-link-right-bracket": {
-      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
-      "matchPosition": 6,
-      "color": " #8097a1c8",
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
+		"timeblocks": {
+			"regex": "(?:^\\s*(?:\\-(?!\\h+\\[[\\-\\>]\\]\\s+)|[\\d+]\\.|\\#{1,5}\\s+))(?:\\[\\s\\]\\s+)?.*?\\s(((at|from)\\s+([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s?(AM|am|PM|pm)?)(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?))?|([0-2]?\\d|noon|midnight)(:[0-5]\\d)\\s*(AM|am|PM|pm)?(\\s*(\\-|\\–|\\~|\\〜|to)\\s*([0-2]?\\d|noon|midnight)(:[0-5]\\d)?(\\s*(AM|am|PM|pm)?)?)?))(?=\\s|$)",
+			"matchPosition": 1,
+			"color": "#da8174"
+		},
 
-    "arrow-link": {
-      "regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
-      "matchPosition": 1,
-      "urlPosition": 1,
-      "backgroundColor": "#10468666",
-      "leftBorderPadding": 10,
-      "rightBorderPadding": 9,
-      "borderRadius": 6,
-      "horizontalMargin": 2,
-      "isRevealOnCursorRange": true,
-      "type": "noteLink",
-      "prefix": "noteplan://x-callback-url/openNote?noteTitle="
-    },
-    "arrow-left-delimiter": {
-      "regex": "(>)(\\S[^<]*)(<)",
-      "matchPosition": 1,
-      "color": "#8052629e",
-      "size": 12,
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    },
-    "arrow-right-delimiter": {
-      "regex": "(>)(\\S[^<]*)(<)",
-      "matchPosition": 3,
-      "color": "#8052629e",
-      "size": 12,
-      "isMarkdownCharacter": true,
-      "isRevealOnCursorRange": true
-    }
-  }
+		"deadline": {
+			"regex": "\\h(!\\d{4}-\\d{2}-\\d{2})\\b",
+			"matchPosition": 1,
+			"font": "AvenirNext-Medium",
+			"color": "#ed7054"
+		},
+
+		"hashtag": {
+			"color": "#97a1c8",
+			"backgroundColor": "#2052629e",
+			"leftBorderPadding": 3,
+			"rightBorderPadding": 3,
+			"borderRadius": 6,
+			"horizontalMargin": 2,
+			"type": ""
+		},
+		"attag": {
+			"color": "#b699c2",
+			"backgroundColor": "#209f79af",
+			"leftBorderPadding": 3,
+			"rightBorderPadding": 3,
+			"borderRadius": 6,
+			"horizontalMargin": 2,
+			"type": ""
+		},
+
+		"special-char": {
+			"COMMENT": "Is this needed?",
+			"font": "Menlo-Bold"
+		},
+
+		"phonenumber": {
+			"COMMENT": "How do I render? Don't know if it works.",
+			"color": "#b699c2"
+		},
+
+		"NoteLinks-main": {
+			"regex": "(?:^|\\h)(\\[\\[)(.*?)(\\]\\])",
+			"matchPosition": 2,
+			"color": "#54a094"
+		},
+		"note-title-link-left-bracket": {
+			"color": "#8097a1c8",
+			"isHiddenWithoutCursor": false
+		},
+		"note-title-link-right-bracket": {
+			"color": "#8097a1c8",
+			"isHiddenWithoutCursor": false
+		},
+
+		"URL-link-left-square-bracket": {
+			"COMMENT": "Slightly more complex than the others to avoid problem with start-of-line task markers",
+			"regex": "(\\[)([^]]*?)(\\])(\\()(.*?)(\\))",
+			"matchPosition": 1,
+			"color": " #8097a1c8",
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		},
+		"URL-link-right-square-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+			"matchPosition": 3,
+			"color": " #8097a1c8",
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		},
+		"URL-link-left-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+			"matchPosition": 4,
+			"color": " #8097a1c8",
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		},
+		"URL-link-right-bracket": {
+			"regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+			"matchPosition": 6,
+			"color": " #8097a1c8",
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		},
+
+		"arrow-link": {
+			"regex": "[\\s^]>([^>]*?)<[$\\s\\b\\.\\)\\]\\}]",
+			"matchPosition": 1,
+			"urlPosition": 1,
+			"backgroundColor": "#10468666",
+			"leftBorderPadding": 10,
+			"rightBorderPadding": 9,
+			"borderRadius": 6,
+			"horizontalMargin": 2,
+			"isRevealOnCursorRange": true,
+			"type": "noteLink",
+			"prefix": "noteplan://x-callback-url/openNote?noteTitle="
+		},
+		"arrow-left-delimiter": {
+			"regex": "(>)(\\S[^<]*)(<)",
+			"matchPosition": 1,
+			"color": "#8052629e",
+			"size": 12,
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		},
+		"arrow-right-delimiter": {
+			"regex": "(>)(\\S[^<]*)(<)",
+			"matchPosition": 3,
+			"color": "#8052629e",
+			"size": 12,
+			"isMarkdownCharacter": true,
+			"isRevealOnCursorRange": true
+		}
+	}
 }
